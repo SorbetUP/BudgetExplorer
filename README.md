@@ -4,7 +4,7 @@ Visualiser le budget de l'État français (PLF/LFI) et estimer votre contributio
 
 ## Demo
 
-- Pages: à activer via GitHub Actions (voir plus bas). L’URL par défaut sera: `https://<votre-compte>.github.io/BudgetExplorer/`.
+- Pages: à activer via GitHub Actions (voir plus bas). L’URL par défaut sera: `https://sorbetup.github.io/BudgetExplorer/`.
 
 ## Fonctionnalités
 
