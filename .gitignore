@@ -1,0 +1,33 @@
+# Node / Vite
+node_modules/
+dist/
+.vite/
+.cache/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Editor
+.DS_Store
+.idea/
+.vscode/
+
+# Coverage
+coverage/
+
+# Env
+.env
+.env.local
+.env.*.local
+
+# Generated data
+public/data/*.json
+!public/data/.gitkeep
+!public/data/sample_state_budget_tree_2025.json
+!public/data/sample_state_revenues_2025.json
+!public/data/sample_budget_vert_2025.json
+!public/data/sample_catalog_2025.json
+

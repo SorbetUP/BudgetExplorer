@@ -1,0 +1,8 @@
+{
+  "year": 2025,
+  "domain": "https://data.economie.gouv.fr",
+  "searched": ["2025 depenses destination"],
+  "candidates": [ { "id": "sample", "title": "Sample dataset", "score": 10 } ],
+  "chosen": { "spending": "sample" }
+}
+

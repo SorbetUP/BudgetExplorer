@@ -56,19 +56,19 @@ export function BudgetTotalView({ treeUrl }: Props) {
 
   const breadcrumbs = useMemo(() => (path.length ? path.map((n) => n.name) : ['État']), [path])
 
+  // Keep hook order consistent across renders: declare before any early return
+  useEffect(() => {
+    const exploring = (path.length > 1)
+    document.body.classList.toggle('exploring', exploring)
+    return () => document.body.classList.remove('exploring')
+  }, [path.length])
+
   if (!annotated || !focusAnnotated) return <div>Chargement…</div>
 
   const percent = annotated && focusAnnotated ? focusAnnotated.cp / annotated.cp : 0
   const children = (focusAnnotated.children || []).filter((c) => (c.cp || 0) > 0)
   const minCp = children.length ? Math.min(...children.map((c) => c.cp || 0)) : focusAnnotated.cp || 0
   const maxCp = children.length ? Math.max(...children.map((c) => c.cp || 0)) : focusAnnotated.cp || 0
-
-  // Toggle exploring mode class (safe, minimal change)
-  useEffect(() => {
-    const exploring = (path.length > 1)
-    document.body.classList.toggle('exploring', exploring)
-    return () => document.body.classList.remove('exploring')
-  }, [path.length])
 
   return (
     <div className="content">

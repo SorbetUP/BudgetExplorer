@@ -1,0 +1,37 @@
+{
+  "name": "budgetexplorer",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Visualiser le budget de l'État (PLF/LFI) et votre contribution.",
+  "license": "MIT",
+  "type": "module",
+  "workspaces": [
+    "data",
+    "web"
+  ],
+  "scripts": {
+    "bootstrap": "npm ci",
+    "lint": "eslint .",
+    "fmt": "prettier --write .",
+    "test": "npm -ws run test --if-present",
+    "fetch": "tsx data/scripts/fetch_fr_budget.mts --year 2025 --out public/data",
+    "fetch:all": "node fetch_all.mjs --year 2025 --out public/data",
+    "dev": "npm -w web run dev",
+    "build": "npm -w web run build"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.30",
+    "@typescript-eslint/eslint-plugin": "^8.7.0",
+    "@typescript-eslint/parser": "^8.7.0",
+    "eslint": "^9.5.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-react": "^7.35.0",
+    "prettier": "^3.3.2",
+    "tsx": "^4.15.7",
+    "typescript": "^5.5.3",
+    "vitest": "^2.0.5"
+  }
+}

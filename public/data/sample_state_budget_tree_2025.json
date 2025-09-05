@@ -1,0 +1,41 @@
+{
+  "year": 2025,
+  "name": "État",
+  "level": "etat",
+  "ae": 200000000000,
+  "cp": 190000000000,
+  "children": [
+    {
+      "code": "129",
+      "name": "Éducation",
+      "level": "mission",
+      "ae": 60000000000,
+      "cp": 58000000000,
+      "children": [
+        {
+          "code": "140",
+          "name": "Enseignement scolaire",
+          "level": "programme",
+          "ae": 40000000000,
+          "cp": 39000000000,
+          "children": [
+            { "code": "01", "name": "Premier degré", "level": "action", "ae": 20000000000, "cp": 19500000000 },
+            { "code": "02", "name": "Second degré", "level": "action", "ae": 20000000000, "cp": 19500000000 }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "166",
+      "name": "Défense",
+      "level": "mission",
+      "ae": 50000000000,
+      "cp": 48000000000,
+      "children": [
+        { "code": "178", "name": "Préparation et emploi des forces", "level": "programme", "ae": 30000000000, "cp": 29000000000 }
+      ]
+    }
+  ],
+  "sources": { "spendingDatasetId": "sample", "license": "Licence Ouverte 2.0" }
+}
+

@@ -1,0 +1,21 @@
+mission_code;intitule_mission;programme_code;intitule_programme;action_code;intitule_action;sous_action_code;intitule_sous_action;ae;cp
+129;Éducation;140;Enseignement scolaire;01;Premier degré;01-01;Écoles primaires;11000000000;11000000000
+129;Éducation;140;Enseignement scolaire;01;Premier degré;01-02;Périscolaire et soutien;9000000000;8500000000
+129;Éducation;140;Enseignement scolaire;02;Second degré;02-01;Collèges;12000000000;12000000000
+129;Éducation;140;Enseignement scolaire;02;Second degré;02-02;Lycées;8000000000;7500000000
+129;Éducation;141;Enseignement supérieur;01;Universités;01-01;Formation et recherche;9000000000;9000000000
+129;Éducation;141;Enseignement supérieur;01;Universités;01-02;Vie étudiante;6000000000;5500000000
+166;Défense;178;Préparation et emploi des forces;01;Préparation des forces;01-01;Entraînement;9000000000;9000000000
+166;Défense;178;Préparation et emploi des forces;01;Préparation des forces;01-02;Maintenance;6000000000;5500000000
+166;Défense;212;Soutien de la politique de défense;01;Soutien des forces;01-01;Logistique;6000000000;6000000000
+166;Défense;212;Soutien de la politique de défense;01;Soutien des forces;01-02;Infrastructures;4000000000;3500000000
+150;Sécurité;176;Police nationale;01;Sécurité publique;01-01;Patrouilles et proximité;7000000000;7000000000
+150;Sécurité;176;Police nationale;01;Sécurité publique;01-02;Investissements matériels;5000000000;4800000000
+150;Sécurité;152;Gendarmerie nationale;01;Ordre public;01-01;Maillage territorial;6000000000;6000000000
+150;Sécurité;152;Gendarmerie nationale;01;Ordre public;01-02;Soutien opérationnel;4000000000;3800000000
+124;Solidarité;157;Handicap et dépendance;01;Aides;01-01;Prestations;4500000000;4500000000
+124;Solidarité;157;Handicap et dépendance;01;Aides;01-02;Accompagnement;3500000000;3300000000
+124;Solidarité;304;Inclusion sociale;01;Insertion;01-01;Politiques d'insertion;4000000000;4000000000
+124;Solidarité;304;Inclusion sociale;01;Insertion;01-02;Structures d'accueil;3000000000;2800000000
+101;Culture;131;Création;01;Soutien à la création;01-01;Spectacle vivant;1700000000;1700000000
+101;Culture;131;Création;01;Soutien à la création;01-02;Patrimoine et musées;1300000000;1200000000

@@ -58,6 +58,13 @@ export function MyContributionView({ treeUrl, salaryNetMonthly }: Props) {
 
   const breadcrumbs = useMemo(() => (path.length ? path.map((n) => n.name) : ['État']), [path])
 
+  // Keep hook order consistent across renders: declare before any early return
+  useEffect(() => {
+    const exploring = (path.length > 1)
+    document.body.classList.toggle('exploring', exploring)
+    return () => document.body.classList.remove('exploring')
+  }, [path.length])
+
   if (!annotated || !focusAnnotated) return <div>Chargement…</div>
 
   const percent = annotated && focusAnnotated ? focusAnnotated.cp / annotated.cp : 0
@@ -66,11 +73,6 @@ export function MyContributionView({ treeUrl, salaryNetMonthly }: Props) {
   const minCp = children.length ? Math.min(...children.map((c) => c.cp || 0)) : focusAnnotated.cp || 0
   const maxCp = children.length ? Math.max(...children.map((c) => c.cp || 0)) : focusAnnotated.cp || 0
 
-  useEffect(() => {
-    const exploring = (path.length > 1)
-    document.body.classList.toggle('exploring', exploring)
-    return () => document.body.classList.remove('exploring')
-  }, [path.length])
 
   return (
     <div className="content">
