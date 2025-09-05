@@ -57,4 +57,21 @@ svg { width: 100%; height: calc(100% - 40px); display: block; }
 /* Exploring mode: fuse header + breadcrumbs visually without moving DOM */
 .exploring .header .nav { display: none; }
 .exploring .header .back { display: none; }
-.exploring .breadcrumbs { position: fixed; top: 10px; left: 92px; margin: 0; z-index: 30; border-bottom: none; border: 1px solid rgba(255,255,255,0.06); background: rgba(0,0,0,0.35); border-radius: 999px; }
+/* Push year control to the right to make room for breadcrumbs */
+.exploring .header .year { margin-left: auto; }
+/* Position next to the brand, computed via CSS vars for robustness */
+.exploring .breadcrumbs {
+  position: fixed;
+  top: var(--crumbs-top, 10px);
+  left: var(--crumbs-left, 92px);
+  margin: 0;
+  z-index: 30;
+  border-bottom: none;
+  border: 1px solid rgba(255,255,255,0.06);
+  background: rgba(0,0,0,0.35);
+  border-radius: 999px;
+  max-width: var(--crumbs-max, 60vw);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

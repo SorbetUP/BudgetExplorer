@@ -58,11 +58,40 @@ export function MyContributionView({ treeUrl, salaryNetMonthly }: Props) {
 
   const breadcrumbs = useMemo(() => (path.length ? path.map((n) => n.name) : ['État']), [path])
 
-  // Keep hook order consistent across renders: declare before any early return
+  // Keep hook order consistent across renders and compute breadcrumbs position
   useEffect(() => {
     const exploring = (path.length > 1)
     document.body.classList.toggle('exploring', exploring)
-    return () => document.body.classList.remove('exploring')
+    const updateCrumbsPos = () => {
+      const header = document.querySelector('.header') as HTMLElement | null
+      const brand = document.querySelector('.header .brand') as HTMLElement | null
+      const year = document.querySelector('.header .year') as HTMLElement | null
+      if (!header || !brand) return
+      const hr = header.getBoundingClientRect()
+      const br = brand.getBoundingClientRect()
+      const yr = year?.getBoundingClientRect()
+      const left = Math.max(8, br.right + 12)
+      let max: number
+      if (yr) {
+        const rightBound = yr.left - 8
+        max = Math.max(0, rightBound - left)
+      } else {
+        max = Math.max(0, hr.right - 180 - left)
+      }
+      if (max < 140) {
+        const vw = Math.max(hr.right, window.innerWidth)
+        max = Math.max(140, vw - left - 200)
+      }
+      document.body.style.setProperty('--crumbs-left', left + 'px')
+      document.body.style.setProperty('--crumbs-top', '10px')
+      document.body.style.setProperty('--crumbs-max', `${Math.max(100, Math.floor(max))}px`)
+    }
+    updateCrumbsPos()
+    window.addEventListener('resize', updateCrumbsPos)
+    return () => {
+      document.body.classList.remove('exploring')
+      window.removeEventListener('resize', updateCrumbsPos)
+    }
   }, [path.length])
 
   if (!annotated || !focusAnnotated) return <div>Chargement…</div>

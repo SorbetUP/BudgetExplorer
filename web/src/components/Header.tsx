@@ -45,7 +45,7 @@ export function Header({ view, onViewChange, year, onYearChange, salaryNet, onSa
           Données
         </button>
       </div>
-      <div>
+      <div className="year">
         <span className="label">Année</span>{' '}
         <select aria-label="Année" value={year} onChange={(e) => onYearChange(Number(e.target.value))}>
           {[2023, 2024, 2025].map((y) => (
