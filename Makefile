@@ -18,6 +18,9 @@ run:
 build:
 	npm run build
 
+preview:
+	npm -w web run preview
+
 # Fetch minimal core datasets (existing TS pipeline)
 fetch:
 	npm run fetch
@@ -25,4 +28,3 @@ fetch:
 # Fetch extended datasets (all-in-one script)
 fetch-all:
 	npm run fetch:all
-

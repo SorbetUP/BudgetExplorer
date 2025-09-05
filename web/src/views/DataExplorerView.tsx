@@ -5,15 +5,19 @@ type Paths = {
   destNatureUrl: string
   performanceUrl: string
   ofglUrl: string
+  revenuesUrl?: string
+  greenUrl?: string
 }
 
 type AnyRow = Record<string, unknown>
 
-export function DataExplorerView({ destUrl, destNatureUrl, performanceUrl, ofglUrl }: Paths) {
+export function DataExplorerView({ destUrl, destNatureUrl, performanceUrl, ofglUrl, revenuesUrl, greenUrl }: Paths) {
   const [dest, setDest] = useState<AnyRow[] | null>(null)
   const [destNature, setDestNature] = useState<AnyRow[] | null>(null)
   const [performance, setPerformance] = useState<AnyRow[] | null>(null)
   const [ofgl, setOfgl] = useState<AnyRow[] | null>(null)
+  const [revenues, setRevenues] = useState<AnyRow[] | null>(null)
+  const [green, setGreen] = useState<AnyRow[] | null>(null)
 
   useEffect(() => {
     let cancel = false
@@ -28,29 +32,35 @@ export function DataExplorerView({ destUrl, destNatureUrl, performanceUrl, ofglU
           return null
         }
       }
-      const [a, b, c, d] = await Promise.all([
+      const [a, b, c, d, e, f] = await Promise.all([
         safeFetch(destUrl),
         safeFetch(destNatureUrl),
         safeFetch(performanceUrl),
         safeFetch(ofglUrl),
+        revenuesUrl ? safeFetch(revenuesUrl) : Promise.resolve(null),
+        greenUrl ? safeFetch(greenUrl) : Promise.resolve(null),
       ])
       if (!cancel) {
         setDest(a)
         setDestNature(b)
         setPerformance(c)
         setOfgl(d)
+        setRevenues(e)
+        setGreen(f)
       }
     }
     load()
     return () => { cancel = true }
-  }, [destUrl, destNatureUrl, performanceUrl, ofglUrl])
+  }, [destUrl, destNatureUrl, performanceUrl, ofglUrl, revenuesUrl, greenUrl])
 
   const sections = useMemo(() => ([
     { key: 'dest', title: 'Dépenses (destination)', data: dest, href: destUrl },
     { key: 'destNature', title: 'Destination × nature', data: destNature, href: destNatureUrl },
     { key: 'performance', title: 'Performance (indicateurs)', data: performance, href: performanceUrl },
     { key: 'ofgl', title: 'Finances locales (communes OFGL)', data: ofgl, href: ofglUrl },
-  ]), [dest, destNature, performance, ofgl, destUrl, destNatureUrl, performanceUrl, ofglUrl])
+    { key: 'revenues', title: 'Recettes du budget général', data: revenues, href: revenuesUrl || '' },
+    { key: 'green', title: 'Budget vert', data: green, href: greenUrl || '' },
+  ]), [dest, destNature, performance, ofgl, revenues, green, destUrl, destNatureUrl, performanceUrl, ofglUrl, revenuesUrl, greenUrl])
 
   return (
     <div className="content">
@@ -111,4 +121,3 @@ function formatCell(v: unknown): string {
   const s = String(v)
   return s.length > 80 ? s.slice(0, 77) + '…' : s
 }
-

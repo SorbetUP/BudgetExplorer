@@ -3,7 +3,7 @@ import type { BudgetTree, BudgetNode } from '../types'
 import { Continents } from '../components/Continents'
 import { Legend } from '../components/Legend'
 import { Breadcrumbs } from '../components/Breadcrumbs'
-import { withPercents, collapseSingleChild } from '../lib/tree-utils'
+import { withPercents, collapseSingleChild, findPathByQuery, flattenNodes } from '../lib/tree-utils'
 import { estimateIRFromNetMonthly } from '../lib/tax'
 import { StatsBar } from '../components/StatsBar'
 
@@ -42,13 +42,31 @@ export function MyContributionView({ treeUrl, salaryNetMonthly }: Props) {
     return () => { cancelled = true }
   }, [treeUrl])
 
+  // Provide search index to the header when tree is ready
+  useEffect(() => {
+    if (!tree) return
+    const items = flattenNodes(tree).map((x) => ({ name: x.name, code: x.code, level: x.level }))
+    // @ts-ignore
+    window.dispatchEvent(new CustomEvent('budget:index', { detail: { items } }))
+  }, [tree])
+
   useEffect(() => {
     const handler = () => setPath((p) => (p.length > 1 ? p.slice(0, -1) : p))
     // @ts-ignore custom event name
     window.addEventListener('budget:back', handler as EventListener)
+    const onSearch = (e: any) => {
+      if (!tree) return
+      const q = (e?.detail?.query ?? '').trim()
+      const p = findPathByQuery(tree, q)
+      if (p && p.length) setPath(p)
+    }
+    // @ts-ignore
+    window.addEventListener('budget:search', onSearch as EventListener)
     return () => {
       // @ts-ignore
       window.removeEventListener('budget:back', handler as EventListener)
+      // @ts-ignore
+      window.removeEventListener('budget:search', onSearch as EventListener)
     }
   }, [])
 
@@ -56,7 +74,8 @@ export function MyContributionView({ treeUrl, salaryNetMonthly }: Props) {
   const focusAnnotated = collapseSingleChild((path.length ? path[path.length - 1] : tree) as BudgetNode | null)
   const myIR = useMemo(() => estimateIRFromNetMonthly(salaryNetMonthly, 1), [salaryNetMonthly])
 
-  const breadcrumbs = useMemo(() => (path.length ? path.map((n) => n.name) : ['État']), [path])
+  // Hide root label from breadcrumbs; only show deeper path
+  const breadcrumbs = useMemo(() => (path.length > 1 ? path.slice(1).map((n) => n.name) : []), [path])
 
   // Keep hook order consistent across renders and compute breadcrumbs position
   useEffect(() => {
@@ -66,25 +85,23 @@ export function MyContributionView({ treeUrl, salaryNetMonthly }: Props) {
       const header = document.querySelector('.header') as HTMLElement | null
       const brand = document.querySelector('.header .brand') as HTMLElement | null
       const nav = document.querySelector('.header .nav') as HTMLElement | null
+      const source = document.querySelector('.header .source') as HTMLElement | null
       const year = document.querySelector('.header .year') as HTMLElement | null
       if (!header || !brand) return
       const hr = header.getBoundingClientRect()
       const br = brand.getBoundingClientRect()
       const nr = nav?.offsetWidth ? nav.getBoundingClientRect() : null
+      const sr = source?.offsetWidth ? source.getBoundingClientRect() : null
       const yr = year?.getBoundingClientRect()
-      const anchorRight = Math.max(br.right, nr ? nr.right : br.right)
-      const left = Math.max(8, anchorRight + 12)
-      let max: number
-      if (yr) {
-        const rightBound = yr.left - 8
-        max = Math.max(0, rightBound - left)
-      } else {
-        max = Math.max(0, hr.right - 180 - left)
-      }
-      if (max < 140) {
-        const vw = Math.max(hr.right, window.innerWidth)
-        max = Math.max(140, vw - left - 200)
-      }
+      const GAP = 12
+      const MIN = 180
+      let left = Math.max(8, Math.max(br.right, nr ? nr.right : br.right, sr ? sr.right : br.right) + GAP)
+      let rightBound: number
+      if (yr) rightBound = yr.left - 8
+      else rightBound = hr.right - 200
+      const available = rightBound - left
+      if (available < MIN) left = Math.max(8, rightBound - MIN)
+      const max = Math.max(60, rightBound - left)
       document.body.style.setProperty('--crumbs-left', left + 'px')
       document.body.style.setProperty('--crumbs-top', '10px')
       document.body.style.setProperty('--crumbs-max', `${Math.max(100, Math.floor(max))}px`)
@@ -109,7 +126,9 @@ export function MyContributionView({ treeUrl, salaryNetMonthly }: Props) {
   return (
     <div className="content">
       <div className="graph">
-        <Breadcrumbs items={breadcrumbs} onBack={() => setPath((p) => (p.length > 1 ? p.slice(0, -1) : p))} />
+        {breadcrumbs.length > 0 && (
+          <Breadcrumbs items={breadcrumbs} />
+        )}
         <StatsBar total={annotated!.cp} selectedAmount={focusAnnotated.cp} selectedPercent={percent} myContribution={myContribution} />
         {focusAnnotated && (
           <Continents

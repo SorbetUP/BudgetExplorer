@@ -351,7 +351,7 @@ async function main() {
   }
   catalog.datasets.budget_vert = greenId;
 
-  // 6) Finances locales — OFGL (exemple communes, année filtrable)
+  // 6) Finances locales — OFGL (communes + autres jeux clés)
   // API doc portail : https://data.ofgl.fr/
   try {
     const ofgl = await apiJSON(OFGL_API, "/records/1.0/search/", {
@@ -367,17 +367,82 @@ async function main() {
     console.warn("! OFGL communes non récupéré (API). Voir le lien ci-dessus.", e?.message || e);
   }
 
-  // 7) SMB (Situations Mensuelles de l'État) — pas d’API JSON standard
+  // OFGL — départements
+  try {
+    const dep = await apiJSON(OFGL_API, "/records/1.0/search/", {
+      dataset: "ofgl-base-departements",
+      rows: 1000,
+      [`refine.annee`]: String(YEAR),
+    });
+    await writeJSON(`ofgl_departements_${YEAR}.json`, dep.records?.map((r) => r.fields) ?? []);
+    catalog.datasets.ofgl_departements = "ofgl-base-departements";
+  } catch {}
+
+  // OFGL — régions
+  try {
+    const reg = await apiJSON(OFGL_API, "/records/1.0/search/", {
+      dataset: "ofgl-base-regions",
+      rows: 1000,
+      [`refine.annee`]: String(YEAR),
+    });
+    await writeJSON(`ofgl_regions_${YEAR}.json`, reg.records?.map((r) => r.fields) ?? []);
+    catalog.datasets.ofgl_regions = "ofgl-base-regions";
+  } catch {}
+
+  // Dotations départements
+  try {
+    const dotdep = await apiJSON(OFGL_API, "/records/1.0/search/", {
+      dataset: "dotations-departements",
+      rows: 1000,
+      [`refine.annee`]: String(YEAR),
+    });
+    await writeJSON(`ofgl_dotations_departements_${YEAR}.json`, dotdep.records?.map((r) => r.fields) ?? []);
+    catalog.datasets.dotations_departements = "dotations-departements";
+  } catch {}
+
+  // Dotations GFP
+  try {
+    const gfp = await apiJSON(OFGL_API, "/records/1.0/search/", {
+      dataset: "dotations-gfp",
+      rows: 1000,
+      [`refine.annee`]: String(YEAR),
+    });
+    await writeJSON(`ofgl_dotations_gfp_${YEAR}.json`, gfp.records?.map((r) => r.fields) ?? []);
+    catalog.datasets.dotations_gfp = "dotations-gfp";
+  } catch {}
+
+  // REI — Recensement éléments d’imposition
+  try {
+    const rei = await apiJSON(OFGL_API, "/records/1.0/search/", {
+      dataset: "rei",
+      rows: 1000,
+      [`refine.annee`]: String(YEAR),
+    });
+    await writeJSON(`ofgl_rei_${YEAR}.json`, rei.records?.map((r) => r.fields) ?? []);
+    catalog.datasets.rei = "rei";
+  } catch {}
+
+  // 7) PLRG (RAP agrégés & notices) si présent
+  try {
+    const id = await findDatasetIdEco({ year: YEAR, keywords: ["plrg"] });
+    if (id) {
+      const rows = await fetchAllRecords(ECO_API, id);
+      await writeJSON(`plrg_${YEAR}.json`, rows.map(lowerKeys));
+      catalog.datasets.plrg = id;
+    }
+  } catch {}
+
+  // 8) SMB (Situations Mensuelles de l'État) — pas d’API JSON standard
   // PDF mensuels à parser (si tu veux une timeline infra-annuelle)
   // LIEN : https://www.aft.gouv.fr/fr/publications/situations-mensuelles-de-letat-smb
   // (Étape manuelle : télécharger PDF → parser tables avec un extracteur ; non implémenté ici)
 
-  // 8) "Données chiffrées sous standard ouvert" (XLS/CSV officiels, fallback)
+  // 9) "Données chiffrées sous standard ouvert" (XLS/CSV officiels, fallback)
   // Hub PLF 2025 (exemples) :
   // LIEN : https://budget.gouv.fr/documentation/documents-budgetaires/plf-2025-donnees-chiffrees
   // (Étape manuelle : téléchargement + parsing XLS via un script séparé si besoin)
 
-  // 9) Jaunes budgétaires (annexes, parfois XLS) — utile pour détails opérateurs, assoc, etc.
+  // 10) Jaunes budgétaires (annexes, parfois XLS) — utile pour détails opérateurs, assoc, etc.
   // Portail :
   // LIEN : https://budget.gouv.fr/documentation/documents-budgetaires/annexes
   // (Scraping à éviter ; privilégier les annexes XLS si présentes)

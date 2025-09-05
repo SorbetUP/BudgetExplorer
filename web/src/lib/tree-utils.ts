@@ -32,3 +32,39 @@ export function collapseSingleChild<T extends BudgetNode | null | undefined>(nod
   }
   return cur as T
 }
+
+// Find path to first node matching a textual query (code or name contains query)
+function norm(s: string): string {
+  return (s || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '')
+}
+
+export function findPathByQuery(root: BudgetNode, query: string): BudgetNode[] | null {
+  const q = norm((query || '').trim())
+  if (!q) return null
+  const path: BudgetNode[] = []
+  let found: BudgetNode | null = null
+  const dfs = (node: BudgetNode): boolean => {
+    path.push(node)
+    const code = norm(node.code || '')
+    const name = norm(node.name || '')
+    if (code === q || code.includes(q) || name.includes(q)) {
+      found = node
+      return true
+    }
+    for (const c of node.children || []) if (dfs(c)) return true
+    path.pop()
+    return false
+  }
+  dfs(root)
+  return found ? [...path] : null
+}
+
+export function flattenNodes(root: BudgetNode): Array<{ name: string; code?: string; level: string }> {
+  const out: Array<{ name: string; code?: string; level: string }> = []
+  const dfs = (n: BudgetNode) => {
+    out.push({ name: n.name, code: n.code, level: n.level })
+    for (const c of n.children || []) dfs(c)
+  }
+  dfs(root)
+  return out
+}

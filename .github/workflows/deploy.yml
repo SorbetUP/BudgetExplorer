@@ -30,6 +30,8 @@ jobs:
         run: npm run fetch
       - name: Build web
         run: npm -w web run build
+        env:
+          VITE_BASE: /BudgetExplorer/
       - name: Add SPA 404 fallback
         run: cp web/dist/index.html web/dist/404.html
       - name: Upload artifact

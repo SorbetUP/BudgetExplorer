@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useMemo, useRef, useState } from 'react'
 
 type Props = {
   view: 'budget' | 'me' | 'data'
@@ -7,9 +7,55 @@ type Props = {
   onYearChange: (y: number) => void
   salaryNet: number
   onSalaryNetChange: (n: number) => void
+  liveApi: boolean
+  onToggleLiveApi: (v: boolean) => void
 }
 
-export function Header({ view, onViewChange, year, onYearChange, salaryNet, onSalaryNetChange }: Props) {
+type SearchItem = { name: string; code?: string; level: string }
+
+function norm(s: string) {
+  return (s || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '')
+}
+
+export function Header({ view, onViewChange, year, onYearChange, salaryNet, onSalaryNetChange, liveApi, onToggleLiveApi }: Props) {
+  const [index, setIndex] = useState<SearchItem[]>([])
+  const [q, setQ] = useState('')
+  const [open, setOpen] = useState(false)
+  const [active, setActive] = useState(0)
+  const boxRef = useRef<HTMLInputElement | null>(null)
+
+  useEffect(() => {
+    const onIndex = (e: any) => {
+      const items = (e?.detail?.items ?? []) as SearchItem[]
+      if (Array.isArray(items)) setIndex(items)
+    }
+    // @ts-ignore
+    window.addEventListener('budget:index', onIndex as EventListener)
+    return () => {
+      // @ts-ignore
+      window.removeEventListener('budget:index', onIndex as EventListener)
+    }
+  }, [])
+
+  const suggestions = useMemo(() => {
+    const nq = norm(q.trim())
+    if (!nq) return [] as SearchItem[]
+    const scored = index.map((it) => {
+      const nc = norm(it.code || '')
+      const nn = norm(it.name)
+      let score = 0
+      if (nc === nq) score = 100
+      else if (nc.startsWith(nq)) score = 85
+      else if (nn.startsWith(nq)) score = 70
+      else if (nc.includes(nq)) score = 55
+      else if (nn.includes(nq)) score = 40
+      return { it, score }
+    }).filter((x) => x.score > 0)
+    scored.sort((a, b) => b.score - a.score || (a.it.name.length - b.it.name.length))
+    return scored.slice(0, 8).map((x) => x.it)
+  }, [q, index])
+
+  useEffect(() => { setActive(0) }, [suggestions.length])
   return (
     <div className="header" role="banner">
       <button
@@ -21,7 +67,49 @@ export function Header({ view, onViewChange, year, onYearChange, salaryNet, onSa
       >
         ←
       </button>
-      <strong className="brand">BudgetExplorer</strong>
+      <div className="brand" style={{ display: 'flex', alignItems: 'center', position: 'relative' }}>
+        <input
+          ref={boxRef}
+          type="search"
+          placeholder="Rechercher mission / programme / code…"
+          aria-label="Rechercher"
+          value={q}
+          onChange={(e) => { setQ(e.target.value); setOpen(true) }}
+          onFocus={() => setOpen(true)}
+          onBlur={() => setTimeout(() => setOpen(false), 120)}
+          onKeyDown={(e) => {
+            if (e.key === 'ArrowDown') { e.preventDefault(); setActive((i) => Math.min((suggestions.length || 1) - 1, i + 1)) }
+            else if (e.key === 'ArrowUp') { e.preventDefault(); setActive((i) => Math.max(0, i - 1)) }
+            else if (e.key === 'Enter') {
+              const pick = suggestions[active]
+              const query = pick?.code || pick?.name || q.trim()
+              if (query) window.dispatchEvent(new CustomEvent('budget:search', { detail: { query } }))
+              setOpen(false)
+              ;(e.currentTarget as HTMLInputElement).blur()
+            }
+          }}
+          style={{ minWidth: 260, width: 'clamp(240px, 32vw, 420px)' }}
+        />
+        {open && suggestions.length > 0 && (
+          <div className="suggest" role="listbox" aria-label="Suggestions">
+            {suggestions.map((s, i) => (
+              <div
+                key={`${s.code ?? ''}-${s.name}-${i}`}
+                className={`item ${i === active ? 'active' : ''}`}
+                onMouseDown={(e) => { e.preventDefault(); }}
+                onClick={() => {
+                  const query = s.code || s.name
+                  window.dispatchEvent(new CustomEvent('budget:search', { detail: { query } }))
+                  setOpen(false)
+                  boxRef.current?.blur()
+                }}
+              >
+                <span className="code">{s.code ? `[${s.code}]` : ''}</span> {s.name}
+              </div>
+            ))}
+          </div>
+        )}
+      </div>
       <div className="nav">
         <button
           className={`chip ${view === 'budget' ? 'active' : ''}`}
@@ -45,6 +133,14 @@ export function Header({ view, onViewChange, year, onYearChange, salaryNet, onSa
           Données
         </button>
       </div>
+      <button
+        className={`chip source ${liveApi ? 'active' : ''}`}
+        aria-pressed={liveApi}
+        title="Basculer source des données (API live / JSON statique)"
+        onClick={() => onToggleLiveApi(!liveApi)}
+      >
+        Source: {liveApi ? 'API live' : 'JSON'}
+      </button>
       <div className="year">
         <span className="label">Année</span>{' '}
         <select aria-label="Année" value={year} onChange={(e) => onYearChange(Number(e.target.value))}>
