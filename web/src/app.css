@@ -75,3 +75,19 @@ svg { width: 100%; height: calc(100% - 40px); display: block; }
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+/* Always-merged style (applies in non-exploring mode too) */
+.breadcrumbs.fused {
+  position: fixed;
+  top: var(--crumbs-top, 10px);
+  left: var(--crumbs-left, 92px);
+  margin: 0;
+  z-index: 30;
+  border-bottom: none;
+  border: 1px solid rgba(255,255,255,0.06);
+  background: rgba(0,0,0,0.35);
+  border-radius: 999px;
+  max-width: var(--crumbs-max, 60vw);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

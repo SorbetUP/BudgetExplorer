@@ -65,12 +65,15 @@ export function MyContributionView({ treeUrl, salaryNetMonthly }: Props) {
     const updateCrumbsPos = () => {
       const header = document.querySelector('.header') as HTMLElement | null
       const brand = document.querySelector('.header .brand') as HTMLElement | null
+      const nav = document.querySelector('.header .nav') as HTMLElement | null
       const year = document.querySelector('.header .year') as HTMLElement | null
       if (!header || !brand) return
       const hr = header.getBoundingClientRect()
       const br = brand.getBoundingClientRect()
+      const nr = nav?.offsetWidth ? nav.getBoundingClientRect() : null
       const yr = year?.getBoundingClientRect()
-      const left = Math.max(8, br.right + 12)
+      const anchorRight = Math.max(br.right, nr ? nr.right : br.right)
+      const left = Math.max(8, anchorRight + 12)
       let max: number
       if (yr) {
         const rightBound = yr.left - 8
