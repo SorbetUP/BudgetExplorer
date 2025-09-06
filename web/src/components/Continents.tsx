@@ -20,12 +20,24 @@ export function Continents({ data, onSelect, onBack }: Props) {
 
     type SimNode = { node: BudgetNode; r: number; x: number; y: number }
 
-    // Deterministic and compact: circle packing (no randomness)
+    // Deterministic and compact: circle packing, with dynamic weighting to avoid tiny islands
     let items: SimNode[]
     if (data.children && data.children.length) {
+      const kids = data.children
+      const vals = kids.map((c) => Math.max(0, c.cp || 0))
+      const vmin = d3.min(vals) ?? 0
+      const vmax = d3.max(vals) ?? 1
+      const range = Math.max(1e-9, vmax - vmin)
+      const alpha = 0.65 // flatten dynamic range (0..1 → 0..1^alpha)
+      const base = 0.12  // floor to avoid disappearing nodes
       const h = d3
-        .hierarchy<BudgetNode>({ name: 'root', level: 'etat', ae: 0, cp: 0, children: data.children } as any)
-        .sum((d) => Math.max(0.0001, d.cp || 0))
+        .hierarchy<BudgetNode>({ name: 'root', level: 'etat', ae: 0, cp: 0, children: kids } as any)
+        .sum((d) => {
+          const v = Math.max(0, d.cp || 0)
+          const t = (v - vmin) / range
+          const w = base + Math.pow(Math.max(0, Math.min(1, t)), alpha)
+          return w
+        })
         .sort((a, b) => (b.value || 0) - (a.value || 0))
       const packed = d3.pack<BudgetNode>().size([width, height]).padding(6)(h)
       items = (packed.children || []).map((c) => ({ node: c.data, r: c.r, x: c.x, y: c.y }))
@@ -143,7 +155,13 @@ export function Continents({ data, onSelect, onBack }: Props) {
       .style('stroke', '#0b1422')
       .style('stroke-width', 4)
       .style('pointer-events', 'none')
-      .text((d) => d.node.name)
+      .text((d) => {
+        const name = d.node.name || ''
+        const code = d.node.code || ''
+        const isCode = /^\s*(\d{1,4}|[A-Z]{1,4})\s*$/.test(name)
+        if (!name || isCode) return ''
+        return name
+      })
 
     // Fit labels: shrink then ellipsize to fit within the island width
     labels.each(function (d) {

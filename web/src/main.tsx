@@ -1,20 +1,20 @@
 import React, { useEffect, useMemo, useState } from 'react'
 import { createRoot } from 'react-dom/client'
 import './app.css'
-import { BudgetTotalView } from './views/BudgetTotalView'
+// import { BudgetTotalView } from './views/BudgetTotalView'
 import { MyContributionView } from './views/MyContributionView'
 import { DataExplorerView } from './views/DataExplorerView'
 import { Header } from './components/Header'
-import { buildTreeBlobUrl, buildDestBlobUrl, buildDestNatureBlobUrl, buildPerformanceBlobUrl, buildOfglBlobUrl, buildBudgetVertBlobUrl } from './live-api'
+import { initialLiveApiEnabled, buildTreeBlobUrl, buildDestBlobUrl, buildDestNatureBlobUrl, buildPerformanceBlobUrl, buildOfglBlobUrl, buildBudgetVertBlobUrl } from './live-api'
 
-type View = 'budget' | 'me' | 'data'
+type View = 'me' | 'data'
 
 function App() {
-  const [view, setView] = useState<View>('budget')
+  const [view, setView] = useState<View>('me')
   const [year, setYear] = useState<number>(2025)
   const [salaryNet, setSalaryNet] = useState<number>(2500)
-  // Default to JSON (live API OFF on first load)
-  const [liveApi, setLiveApi] = useState<boolean>(false)
+  // Restore previous choice (localStorage/query/env); default JSON if none
+  const [liveApi, setLiveApi] = useState<boolean>(initialLiveApiEnabled())
   const [treeUrl, setTreeUrl] = useState<string>('')
   const [destUrl, setDestUrl] = useState<string>('')
   const [destNatureUrl, setDestNatureUrl] = useState<string>('')
@@ -40,16 +40,18 @@ function App() {
   }, [liveApi])
 
   useEffect(() => {
-    let revoked: string | null = null
     const rev: string[] = []
     const setAndTrack = (setter: (v: string) => void) => (url: string | null) => { if (url) { setter(url); rev.push(url) } else { setter('') } }
     if (liveApi) {
-      buildTreeBlobUrl(year).then(setAndTrack(setTreeUrl))
-      buildDestBlobUrl(year).then(setAndTrack(setDestUrl))
-      buildDestNatureBlobUrl(year).then(setAndTrack(setDestNatureUrl))
-      buildPerformanceBlobUrl(year).then(setAndTrack(setPerformanceUrl))
-      buildOfglBlobUrl(year).then(setAndTrack(setOfglUrl))
-      buildBudgetVertBlobUrl(year).then(setAndTrack(setGreenUrl))
+      // Kick off all requests in parallel, leveraging persistent cache inside live-api
+      Promise.all([
+        buildTreeBlobUrl(year).then(setAndTrack(setTreeUrl)),
+        buildDestBlobUrl(year).then(setAndTrack(setDestUrl)),
+        buildDestNatureBlobUrl(year).then(setAndTrack(setDestNatureUrl)),
+        buildPerformanceBlobUrl(year).then(setAndTrack(setPerformanceUrl)),
+        buildOfglBlobUrl(year).then(setAndTrack(setOfglUrl)),
+        buildBudgetVertBlobUrl(year).then(setAndTrack(setGreenUrl)),
+      ]).then(() => void 0)
     } else {
       setTreeUrl(''); setDestUrl(''); setDestNatureUrl(''); setPerformanceUrl(''); setOfglUrl(''); setGreenUrl('')
     }
@@ -68,11 +70,8 @@ function App() {
         liveApi={liveApi}
         onToggleLiveApi={setLiveApi}
       />
-      {view === 'budget' && (
-        <BudgetTotalView treeUrl={paths.tree} />
-      )}
       {view === 'me' && (
-        <MyContributionView treeUrl={paths.tree} salaryNetMonthly={salaryNet} />
+        <MyContributionView treeUrl={paths.tree} salaryNetMonthly={salaryNet} onSalaryNetChange={setSalaryNet} />
       )}
       {view === 'data' && (
         <DataExplorerView

@@ -5,11 +5,11 @@ import { Legend } from '../components/Legend'
 import { Breadcrumbs } from '../components/Breadcrumbs'
 import { withPercents, collapseSingleChild, findPathByQuery, flattenNodes } from '../lib/tree-utils'
 import { estimateIRFromNetMonthly } from '../lib/tax'
-import { StatsBar } from '../components/StatsBar'
+// import { StatsBar } from '../components/StatsBar'
 
-type Props = { treeUrl: string; salaryNetMonthly: number }
+type Props = { treeUrl: string; salaryNetMonthly: number; onSalaryNetChange: (n: number) => void }
 
-export function MyContributionView({ treeUrl, salaryNetMonthly }: Props) {
+export function MyContributionView({ treeUrl, salaryNetMonthly, onSalaryNetChange }: Props) {
   const [tree, setTree] = useState<BudgetTree | null>(null)
   const [path, setPath] = useState<BudgetNode[]>([])
 
@@ -81,6 +81,7 @@ export function MyContributionView({ treeUrl, salaryNetMonthly }: Props) {
   useEffect(() => {
     const exploring = (path.length > 1)
     document.body.classList.toggle('exploring', exploring)
+    document.body.classList.toggle('me-root', !exploring)
     const updateCrumbsPos = () => {
       const header = document.querySelector('.header') as HTMLElement | null
       const brand = document.querySelector('.header .brand') as HTMLElement | null
@@ -110,6 +111,7 @@ export function MyContributionView({ treeUrl, salaryNetMonthly }: Props) {
     window.addEventListener('resize', updateCrumbsPos)
     return () => {
       document.body.classList.remove('exploring')
+      document.body.classList.remove('me-root')
       window.removeEventListener('resize', updateCrumbsPos)
     }
   }, [path.length])
@@ -129,7 +131,6 @@ export function MyContributionView({ treeUrl, salaryNetMonthly }: Props) {
         {breadcrumbs.length > 0 && (
           <Breadcrumbs items={breadcrumbs} />
         )}
-        <StatsBar total={annotated!.cp} selectedAmount={focusAnnotated.cp} selectedPercent={percent} myContribution={myContribution} />
         {focusAnnotated && (
           <Continents
             data={focusAnnotated as BudgetNode}
@@ -137,7 +138,14 @@ export function MyContributionView({ treeUrl, salaryNetMonthly }: Props) {
             onBack={() => setPath((p)=> (p.length>1? p.slice(0,-1): p))}
           />
         )}
-        <Legend min={minCp} max={maxCp} />
+        <Legend
+          min={minCp}
+          max={maxCp}
+          contribution={path.length > 1 ? myContribution : salaryNetMonthly}
+          percent={path.length > 1 ? percent : undefined}
+          editable={path.length === 1}
+          onContributionChange={onSalaryNetChange}
+        />
       </div>
     </div>
   )

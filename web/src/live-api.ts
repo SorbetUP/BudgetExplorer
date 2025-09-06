@@ -2,6 +2,7 @@
 // and build the LOLF tree at runtime. Falls back to static files elsewhere.
 
 import type { BudgetNode, BudgetTree } from './types'
+import { idbGet, idbSet } from './lib/idb'
 
 const ECO_API = 'https://data.economie.gouv.fr/api/explore/v2.1'
 const OFGL_API = 'https://data.ofgl.fr/api'
@@ -59,25 +60,51 @@ async function findDatasetIdEco(year: number, keywords: string[]): Promise<strin
 }
 
 const cache = new Map<string, AnyRec[]>()
+const PERSIST_TTL_MS = 1000 * 60 * 60 * 6 // 6h
 
 async function fetchAllRecords(datasetId: string): Promise<AnyRec[]> {
   if (cache.has(datasetId)) return cache.get(datasetId) as AnyRec[]
+  // Persistent cache (IndexedDB)
+  const persistKey = `ds:${datasetId}`
+  try {
+    const cached = (await idbGet<{ ts: number; rows: AnyRec[] }>(persistKey))
+    if (cached && Date.now() - cached.ts < PERSIST_TTL_MS) {
+      cache.set(datasetId, cached.rows)
+      return cached.rows
+    }
+  } catch {}
   const limit = 100
   let offset = 0
   const out: AnyRec[] = []
-  for (;;) {
+  let endReached = false
+  const CONC = 6
+  const queue: number[] = []
+  for (let i = 0; i < CONC; i++) queue.push(i * limit)
+  async function fetchPage(off: number): Promise<number | null> {
     const url = new URL(ECO_API + `/catalog/datasets/${datasetId}/records`)
     url.searchParams.set('limit', String(limit))
-    url.searchParams.set('offset', String(offset))
+    url.searchParams.set('offset', String(off))
     const res = await fetch(url.toString(), { headers: { Accept: 'application/json' } })
-    if (!res.ok) break
+    if (!res.ok) return null
     const page = await res.json().catch(() => null) as any
     const rows: AnyRec[] = (page?.results ?? []).map((r: any) => r.record ?? r)
     out.push(...rows)
-    if (rows.length < limit) break
-    offset += limit
+    return rows.length
   }
+  const run = async () => {
+    while (queue.length && !endReached) {
+      const offs = queue.splice(0, CONC)
+      const lens = await Promise.all(offs.map(fetchPage))
+      let nextStart = (offs.length ? Math.max(...offs) : -limit) + limit
+      for (const len of lens) if (len !== null && len < limit) endReached = true
+      if (!endReached) {
+        for (let i = 0; i < CONC; i++) queue.push(nextStart + i * limit)
+      }
+    }
+  }
+  await run()
   cache.set(datasetId, out)
+  try { await idbSet(persistKey, { ts: Date.now(), rows: out }) } catch {}
   return out
 }
 
@@ -207,6 +234,20 @@ function buildTree(records: AnyRec[], year: number): BudgetTree {
   } as any
 
   const mMap = new Map<string, BudgetNode>()
+
+  const isCodeLike = (s?: string | null): boolean => {
+    if (!s) return true
+    const t = String(s).trim()
+    return /^\d{1,4}$/.test(t) || /^[A-Z]{1,4}$/.test(t)
+  }
+  const maybeUpdateName = (node: BudgetNode, candidate?: string | null, code?: string | null) => {
+    const cand = candidate ? String(candidate).trim() : ''
+    if (!cand) return
+    const current = node.name || ''
+    if (!current || current === code || isCodeLike(current)) {
+      if (!isCodeLike(cand)) node.name = cand
+    }
+  }
   for (const rec of records) {
     const n = normalizeLOLF(rec)
     if (!n.mission || !n.programme) continue
@@ -220,12 +261,14 @@ function buildTree(records: AnyRec[], year: number): BudgetTree {
       root.children!.push(m)
     }
     addAmounts(m as any, n)
+    maybeUpdateName(m!, n.mission as any, n.code_mission as any)
     let p = (m.children || []).find((c) => c.id === `programme-${pKey}`)
     if (!p) {
       p = { id: `programme-${pKey}`, name: n.programme!, code: n.code_programme || undefined, level: 'programme', cp: 0, ae: 0, children: [] } as any
       m.children!.push(p)
     }
     addAmounts(p as any, n)
+    maybeUpdateName(p!, n.programme as any, n.code_programme as any)
     if (n.action) {
       let a = (p.children || []).find((c) => c.id === `action-${aKey}`)
       if (!a) {
@@ -233,6 +276,7 @@ function buildTree(records: AnyRec[], year: number): BudgetTree {
         p.children!.push(a)
       }
       addAmounts(a as any, n)
+      maybeUpdateName(a!, n.action as any, n.code_action as any)
       if (n.sous_action) {
         const sKey = `${aKey}::${n.code_sous_action || n.sous_action}`
         let s = (a.children || []).find((c) => c.id === `sousaction-${sKey}`)
@@ -242,6 +286,7 @@ function buildTree(records: AnyRec[], year: number): BudgetTree {
           a.children.push(s)
         }
         addAmounts(s as any, n)
+        maybeUpdateName(s as any, n.sous_action as any, n.code_sous_action as any)
       }
     }
     addAmounts(root as any, n)

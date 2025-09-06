@@ -19,6 +19,12 @@ export function DataExplorerView({ destUrl, destNatureUrl, performanceUrl, ofglU
   const [revenues, setRevenues] = useState<AnyRow[] | null>(null)
   const [green, setGreen] = useState<AnyRow[] | null>(null)
 
+  // Ensure header nav is visible when entering Data view
+  useEffect(() => {
+    document.body.classList.remove('exploring')
+    document.body.classList.remove('me-root')
+  }, [])
+
   useEffect(() => {
     let cancel = false
     const load = async () => {

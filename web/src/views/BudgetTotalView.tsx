@@ -4,7 +4,7 @@ import { Continents } from '../components/Continents'
 import { Legend } from '../components/Legend'
 import { Breadcrumbs } from '../components/Breadcrumbs'
 import { withPercents, collapseSingleChild, findPathByQuery, flattenNodes } from '../lib/tree-utils'
-import { StatsBar } from '../components/StatsBar'
+// import { StatsBar } from '../components/StatsBar'
 
 type Props = { treeUrl: string }
 
@@ -137,7 +137,6 @@ export function BudgetTotalView({ treeUrl }: Props) {
         {breadcrumbs.length > 0 && (
           <Breadcrumbs items={breadcrumbs} />
         )}
-        <StatsBar total={annotated.cp} selectedAmount={focusAnnotated.cp} selectedPercent={percent} />
         {focusAnnotated && (
           <Continents
             data={focusAnnotated as BudgetNode}

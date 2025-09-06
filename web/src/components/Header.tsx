@@ -1,8 +1,8 @@
 import React, { useEffect, useMemo, useRef, useState } from 'react'
 
 type Props = {
-  view: 'budget' | 'me' | 'data'
-  onViewChange: (v: 'budget' | 'me' | 'data') => void
+  view: 'me' | 'data'
+  onViewChange: (v: 'me' | 'data') => void
   year: number
   onYearChange: (y: number) => void
   salaryNet: number
@@ -112,13 +112,6 @@ export function Header({ view, onViewChange, year, onYearChange, salaryNet, onSa
       </div>
       <div className="nav">
         <button
-          className={`chip ${view === 'budget' ? 'active' : ''}`}
-          onClick={() => onViewChange('budget' as any)}
-          aria-pressed={view === 'budget'}
-        >
-          Vue: Budget total
-        </button>
-        <button
           className={`chip ${view === 'me' ? 'active' : ''}`}
           onClick={() => onViewChange('me' as any)}
           aria-pressed={view === 'me'}
@@ -151,8 +144,8 @@ export function Header({ view, onViewChange, year, onYearChange, salaryNet, onSa
           ))}
         </select>
       </div>
-      <div style={{ marginLeft: 'auto' }}>
-        <span className="label">Salaire net mensuel (€)</span>{' '}
+      <div className="salary" style={{ marginLeft: 'auto' }}>
+        <span className="label">Contribution estimée</span>{' '}
         <input
           type="number"
           min={0}

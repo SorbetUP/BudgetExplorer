@@ -77,6 +77,7 @@ svg { width: 100%; height: calc(100% - 40px); display: block; }
   text-overflow: ellipsis;
   white-space: nowrap;
   display: flex;
+  pointer-events: none; /* never block header clicks */
 }
 /* Always-merged style (applies in non-exploring mode too) */
 .breadcrumbs.fused {
@@ -94,6 +95,8 @@ svg { width: 100%; height: calc(100% - 40px); display: block; }
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+/* Hide header salary when at root of contribution view */
+.me-root .header .salary { display: none; }
 /* Search input styling in header */
 .header input[type="search"] {
   -webkit-appearance: none;
