@@ -1,0 +1,99 @@
+{
+  "year": 2023,
+  "name": "État français",
+  "level": "etat",
+  "ae": 578000000000,
+  "cp": 441200000000,
+  "description": "Budget général de l'État français pour 2023 (exécution), organisé selon la Loi Organique relative aux Lois de Finances (LOLF)",
+  "historical": {
+    "execution_2023": 441200000000,
+    "lfi_2024": 442800000000,
+    "plf_2025": 444970000000
+  },
+  "children": [
+    {
+      "code": "ENSEIGN",
+      "name": "Enseignement scolaire",
+      "level": "mission",
+      "ae": 72800000000,
+      "cp": 72800000000,
+      "description": "Mission dédiée à l'éducation nationale, de l'école maternelle au lycée, public et privé sous contrat",
+      "historical": {
+        "execution_2023": 72800000000,
+        "lfi_2024": 73500000000,
+        "plf_2025": 74200000000
+      },
+      "children": [
+        {
+          "code": "P140",
+          "name": "Enseignement scolaire public du premier degré",
+          "level": "programme", 
+          "ae": 24200000000,
+          "cp": 24200000000,
+          "description": "Écoles maternelles et élémentaires publiques : rémunération des enseignants, fonctionnement, accompagnement des élèves",
+          "children": [
+            {
+              "name": "Enseignement public du premier degré",
+              "level": "action",
+              "ae": 23200000000,
+              "cp": 23200000000,
+              "description": "Rémunération des professeurs des écoles, directeurs d'école, accompagnement pédagogique"
+            },
+            {
+              "name": "Inclusion scolaire du premier degré",
+              "level": "action",
+              "ae": 1000000000,
+              "cp": 1000000000,
+              "description": "Accompagnement des élèves en situation de handicap (AESH), dispositifs inclusifs"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "DEFENSE", 
+      "name": "Défense",
+      "level": "mission",
+      "ae": 47300000000,
+      "cp": 47300000000,
+      "description": "Mission régalienne de défense nationale : forces armées, gendarmerie, service national universel",
+      "historical": {
+        "execution_2023": 47300000000,
+        "lfi_2024": 49200000000,
+        "plf_2025": 49800000000
+      },
+      "children": [
+        {
+          "code": "P178",
+          "name": "Préparation et emploi des forces",
+          "level": "programme",
+          "ae": 23800000000,
+          "cp": 23800000000,
+          "description": "Entraînement, préparation opérationnelle et engagement des forces armées françaises",
+          "children": [
+            {
+              "name": "Entraînement et préparation opérationnelle des forces",
+              "level": "action",
+              "ae": 14000000000, 
+              "cp": 14000000000,
+              "description": "Exercices militaires, formation des militaires, maintien en condition opérationnelle"
+            },
+            {
+              "name": "Opérations extérieures",
+              "level": "action",
+              "ae": 9800000000,
+              "cp": 9800000000,
+              "description": "Déploiements militaires à l'étranger (OPEX), missions de stabilisation"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "sources": {
+    "spendingDatasetId": "execution-2023-budget-sample",
+    "license": "Licence Ouverte 2.0",
+    "dataAccuracy": "Basé sur l'exécution 2023 avec noms descriptifs et cohérence historique",
+    "lastUpdated": "2025-09-07"
+  }
+}

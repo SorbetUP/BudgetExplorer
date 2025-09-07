@@ -32,6 +32,8 @@ function App() {
     destNature: destNatureUrl || `${dataBasePath}/data/state_depenses_dest_nature_${year}.json`,
     performance: performanceUrl || `${dataBasePath}/data/state_performance_${year}.json`,
     ofgl: ofglUrl || `${dataBasePath}/data/ofgl_communes_${year}.json`,
+    // Fallback URLs for enhanced data and GitHub Pages compatibility
+    treeFallback: `${dataBasePath}/data/sample_state_budget_tree_${year}.json`,
   }), [year, treeUrl, destUrl, destNatureUrl, performanceUrl, ofglUrl, greenUrl])
 
   // Live API toggle persistence and tree URL management

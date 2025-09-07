@@ -41,13 +41,17 @@ export function MyContributionView({ treeUrl, salaryNetMonthly, onSalaryNetChang
     return () => { cancelled = true }
   }, [treeUrl])
 
-  // Provide search index to the header when tree is ready
-  useEffect(() => {
-    if (!tree) return
-    const items = flattenNodes(tree).map((x) => ({ name: x.name, code: x.code, level: x.level }))
-    // @ts-ignore
-    window.dispatchEvent(new CustomEvent('budget:index', { detail: { items } }))
+  // Provide search index to the header when tree is ready - memoized for performance
+  const searchIndex = useMemo(() => {
+    if (!tree) return []
+    return flattenNodes(tree).map((x) => ({ name: x.name, code: x.code, level: x.level }))
   }, [tree])
+  
+  useEffect(() => {
+    if (searchIndex.length === 0) return
+    // @ts-ignore
+    window.dispatchEvent(new CustomEvent('budget:index', { detail: { items: searchIndex } }))
+  }, [searchIndex])
 
   // Process any pending search query set before switching to this view or while data was loading
   useEffect(() => {

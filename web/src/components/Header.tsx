@@ -39,20 +39,28 @@ export function Header({ view, onViewChange, year, onYearChange, salaryNet, onSa
 
   const suggestions = useMemo(() => {
     const nq = norm(q.trim())
-    if (!nq) return [] as SearchItem[]
+    if (!nq || nq.length < 2) return [] as SearchItem[] // Require at least 2 chars
+    
     const scored = index.map((it) => {
       const nc = norm(it.code || '')
       const nn = norm(it.name)
       let score = 0
+      
+      // Prioritize exact matches and starts-with for better UX
       if (nc === nq) score = 100
       else if (nc.startsWith(nq)) score = 85
       else if (nn.startsWith(nq)) score = 70
       else if (nc.includes(nq)) score = 55
       else if (nn.includes(nq)) score = 40
+      
+      // Boost score for shorter names (more specific)
+      if (score > 0 && it.name.length < 50) score += 5
+      
       return { it, score }
     }).filter((x) => x.score > 0)
+    
     scored.sort((a, b) => b.score - a.score || (a.it.name.length - b.it.name.length))
-    return scored.slice(0, 8).map((x) => x.it)
+    return scored.slice(0, 6).map((x) => x.it) // Reduced to 6 for better performance
   }, [q, index])
 
   useEffect(() => { setActive(0) }, [suggestions.length])

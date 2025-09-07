@@ -70,6 +70,9 @@ export async function discoverDatasets(
     `${year} budget lolf`,
     `${year} recettes`,
     `${year} budget vert`,
+    `plf${year % 100} budget vert`,  // PLF25 format
+    `plf-${year}-budget-vert`,       // plf-2025-budget-vert format
+    `performance-de-la-depense`,     // Performance data
   ]
 
   const candidates: Array<{ id: string; title?: string; score: number }> = []
@@ -106,7 +109,13 @@ export async function discoverDatasets(
   // Relaxed fallback: if nothing, pick best depenses/destination regardless of year
   if (!spending) spending = choose((c) => /(depens|destination|lolf)/i.test((c.id + ' ' + (c.title || '')).toLowerCase()))
   const revenues = choose((c) => /recett|revenu|fiscal|impo/i.test(c.id + ' ' + (c.title || '')))
-  const green = choose((c) => /vert|green/i.test(c.id + ' ' + (c.title || '')))
+  // Enhanced green budget detection - prefer PLF datasets
+  let green = choose((c) => {
+    const hay = (c.id + ' ' + (c.title || '')).toLowerCase()
+    if (/plf.*budget.*vert/i.test(hay)) return true
+    return /vert|green/i.test(hay)
+  })
+  if (!green) green = choose((c) => /vert|green/i.test(c.id + ' ' + (c.title || '')))
 
   const trace: CatalogTrace = {
     year,
