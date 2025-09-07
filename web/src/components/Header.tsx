@@ -157,28 +157,30 @@ export function Header({ view, onViewChange, year, onYearChange, salaryNet, onSa
       >
         Source: {liveApi ? 'API live' : 'JSON'}
       </button>
-      <div className="year">
-        <span className="label">Année</span>{' '}
-        <select aria-label="Année" value={year} onChange={(e) => onYearChange(Number(e.target.value))}>
-          {[2023, 2024, 2025].map((y) => (
-            <option key={y} value={y}>
-              {y}
-            </option>
-          ))}
-        </select>
-      </div>
-      {view === 'me' && (
-        <div className="salary" style={{ marginLeft: 'auto' }}>
-          <span className="label">Contribution estimée</span>{' '}
-          <input
-            type="number"
-            min={0}
-            step={50}
-            value={salaryNet}
-            onChange={(e) => onSalaryNetChange(Number(e.target.value))}
-          />
+      <div style={{ marginLeft: 'auto', display: 'flex', alignItems: 'center', gap: '12px' }}>
+        {view === 'me' && (
+          <div className="salary">
+            <span className="label">Contribution estimée</span>{' '}
+            <input
+              type="number"
+              min={0}
+              step={50}
+              value={salaryNet}
+              onChange={(e) => onSalaryNetChange(Number(e.target.value))}
+            />
+          </div>
+        )}
+        <div className="year">
+          <span className="label">Année</span>{' '}
+          <select aria-label="Année" value={year} onChange={(e) => onYearChange(Number(e.target.value))}>
+            {[2023, 2024, 2025].map((y) => (
+              <option key={y} value={y}>
+                {y}
+              </option>
+            ))}
+          </select>
         </div>
-      )}
+      </div>
     </div>
   )
 }

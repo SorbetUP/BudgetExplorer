@@ -2,7 +2,6 @@ import React, { useEffect, useMemo, useState } from 'react'
 import type { BudgetTree, BudgetNode } from '../types'
 import { Continents } from '../components/Continents'
 import { Legend } from '../components/Legend'
-import { Breadcrumbs } from '../components/Breadcrumbs'
 import { withPercents, collapseSingleChild, findPathByQuery, flattenNodes } from '../lib/tree-utils'
 import { estimateIRFromNetMonthly } from '../lib/tax'
 // import { StatsBar } from '../components/StatsBar'
@@ -100,8 +99,6 @@ export function MyContributionView({ treeUrl, salaryNetMonthly, onSalaryNetChang
   const focusAnnotated = collapseSingleChild((path.length ? path[path.length - 1] : tree) as BudgetNode | null)
   const myIR = useMemo(() => estimateIRFromNetMonthly(salaryNetMonthly, 1), [salaryNetMonthly])
 
-  // Hide root label from breadcrumbs; only show deeper path
-  const breadcrumbs = useMemo(() => (path.length > 1 ? path.slice(1).map((n) => n.name) : []), [path])
 
   // Keep hook order consistent across renders and compute breadcrumbs position
   useEffect(() => {
@@ -154,9 +151,6 @@ export function MyContributionView({ treeUrl, salaryNetMonthly, onSalaryNetChang
   return (
     <div className="content">
       <div className="graph">
-        {breadcrumbs.length > 0 && (
-          <Breadcrumbs items={breadcrumbs} />
-        )}
         {focusAnnotated && (
           <Continents
             data={focusAnnotated as BudgetNode}
