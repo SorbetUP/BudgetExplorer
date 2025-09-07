@@ -144,16 +144,18 @@ export function Header({ view, onViewChange, year, onYearChange, salaryNet, onSa
           ))}
         </select>
       </div>
-      <div className="salary" style={{ marginLeft: 'auto' }}>
-        <span className="label">Contribution estimée</span>{' '}
-        <input
-          type="number"
-          min={0}
-          step={50}
-          value={salaryNet}
-          onChange={(e) => onSalaryNetChange(Number(e.target.value))}
-        />
-      </div>
+      {view === 'me' && (
+        <div className="salary" style={{ marginLeft: 'auto' }}>
+          <span className="label">Contribution estimée</span>{' '}
+          <input
+            type="number"
+            min={0}
+            step={50}
+            value={salaryNet}
+            onChange={(e) => onSalaryNetChange(Number(e.target.value))}
+          />
+        </div>
+      )}
     </div>
   )
 }

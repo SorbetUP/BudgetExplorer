@@ -36,6 +36,12 @@ function App() {
 
   // Live API toggle persistence and tree URL management
   useEffect(() => {
+    // Reflect current view as a body class for CSS-based behaviors
+    document.body.classList.toggle('view-me', view === 'me')
+    document.body.classList.toggle('view-data', view === 'data')
+  }, [view])
+
+  useEffect(() => {
     localStorage.setItem('liveApi', liveApi ? '1' : '0')
   }, [liveApi])
 

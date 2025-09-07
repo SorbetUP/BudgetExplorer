@@ -97,6 +97,8 @@ svg { width: 100%; height: calc(100% - 40px); display: block; }
 }
 /* Hide header salary when at root of contribution view */
 .me-root .header .salary { display: none; }
+/* Also hide in Data view explicitly */
+.view-data .header .salary { display: none; }
 /* Search input styling in header */
 .header input[type="search"] {
   -webkit-appearance: none;
