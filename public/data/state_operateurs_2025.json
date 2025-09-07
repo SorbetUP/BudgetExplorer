@@ -1,0 +1,1626 @@
+[
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "Musée Moreau",
+    "statut": "EPA",
+    "programme_chef_de_file": "175 - Patrimoines",
+    "mission_correspondant_au_programme_chef_de_file": "Culture",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "ANRU - Agence nationale pour la rénovation urbaine",
+    "statut": "EPIC",
+    "programme_chef_de_file": "147 - Politique de la ville",
+    "mission_correspondant_au_programme_chef_de_file": "Égalité des territoires, logement et ville",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "ENAP - Ecole nationale de l'administration pénitentiaire",
+    "statut": "EPA",
+    "programme_chef_de_file": "107 - Administration pénitentiaire",
+    "mission_correspondant_au_programme_chef_de_file": "Justice",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "ANACT - Agence nationale pour l'amélioration des conditions de travail",
+    "statut": "EPA",
+    "programme_chef_de_file": "111 - Amélioration de la qualité de l'emploi et des relations du travail",
+    "mission_correspondant_au_programme_chef_de_file": "Travail et emploi",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "Agences de l'eau",
+    "statut": "Catégorie",
+    "programme_chef_de_file": "113 - Paysages, eau et biodiversité",
+    "mission_correspondant_au_programme_chef_de_file": "Écologie, développement et mobilité durables",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 6
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "CNAPS - Conseil national des activités privées de sécurité",
+    "statut": "sui generis",
+    "programme_chef_de_file": "216 - Conduite et pilotage des politiques de l'intérieur",
+    "mission_correspondant_au_programme_chef_de_file": "Administration générale et territoriale de l'État",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "ACSE - Agence nationale pour la cohésion sociale et l'égalité des chances",
+    "statut": "EPA",
+    "programme_chef_de_file": "147 - Politique de la ville",
+    "mission_correspondant_au_programme_chef_de_file": "Égalité des territoires, logement et ville",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "Institut Mines-Télécom",
+    "statut": "EPSCP",
+    "programme_chef_de_file": "192 - Recherche et enseignement supérieur en matière économique et industrielle",
+    "mission_correspondant_au_programme_chef_de_file": "Recherche et enseignement supérieur",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "EPMQB - Etablissement public du musée du quai Branly",
+    "statut": "EPA",
+    "programme_chef_de_file": "175 - Patrimoines",
+    "mission_correspondant_au_programme_chef_de_file": "Culture",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": "150 - Formations supérieures et recherche universitaire ,",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "ENSTA Bretagne - Ecole nationale supérieure de techniques avancées Bretagne",
+    "statut": "EPA",
+    "programme_chef_de_file": "144 - Environnement et prospective de la politique de défense",
+    "mission_correspondant_au_programme_chef_de_file": "Défense",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "SGP - Société du Grand Paris",
+    "statut": "EPIC",
+    "programme_chef_de_file": "135 - Urbanisme, territoires et amélioration de l'habitat",
+    "mission_correspondant_au_programme_chef_de_file": "Égalité des territoires, logement et ville",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "CGLLS - Caisse de garantie du logement locatif social",
+    "statut": "EPA",
+    "programme_chef_de_file": "135 - Urbanisme, territoires et amélioration de l'habitat",
+    "mission_correspondant_au_programme_chef_de_file": "Égalité des territoires, logement et ville",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "GIP - BIO - Agence française pour le développement et la promotion de l'agriculture biologique",
+    "statut": "GIP",
+    "programme_chef_de_file": "154 - Économie et développement durable de l'agriculture et des territoires",
+    "mission_correspondant_au_programme_chef_de_file": "Agriculture, alimentation, forêt et affaires rurales",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "EPPD - Etablissement public du palais de la porte Dorée (Cité nationale de l'histoire de l'immigration et aquarium)",
+    "statut": "EPA",
+    "programme_chef_de_file": "224 - Transmission des savoirs et démocratisation de la culture",
+    "mission_correspondant_au_programme_chef_de_file": "Culture",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": "104 - Intégration et accès à la nationalité française ,",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "ENA - Ecole nationale d'administration",
+    "statut": "EPA",
+    "programme_chef_de_file": "148 - Fonction publique",
+    "mission_correspondant_au_programme_chef_de_file": "Gestion des finances publiques et des ressources humaines",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "Ecoles des mines",
+    "statut": "Catégorie",
+    "programme_chef_de_file": "192 - Recherche et enseignement supérieur en matière économique et industrielle",
+    "mission_correspondant_au_programme_chef_de_file": "Recherche et enseignement supérieur",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 6
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "CNES - Centre national d'études spatiales",
+    "statut": "EPIC",
+    "programme_chef_de_file": "193 - Recherche spatiale",
+    "mission_correspondant_au_programme_chef_de_file": "Recherche et enseignement supérieur",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": "191 - Recherche duale (civile et militaire) ,",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "SCEREN - Service culture, éditions, ressources pour l'éducation nationale",
+    "statut": "Catégorie",
+    "programme_chef_de_file": "214 - Soutien de la politique de l'éducation nationale",
+    "mission_correspondant_au_programme_chef_de_file": "Enseignement scolaire",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 31
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "CNED - Centre national d'enseignement à distance",
+    "statut": "EPA",
+    "programme_chef_de_file": "214 - Soutien de la politique de l'éducation nationale",
+    "mission_correspondant_au_programme_chef_de_file": "Enseignement scolaire",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "Autres opérateurs d'enseignement supérieur et de recherche",
+    "statut": "Catégorie",
+    "programme_chef_de_file": "150 - Formations supérieures et recherche universitaire",
+    "mission_correspondant_au_programme_chef_de_file": "Recherche et enseignement supérieur",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 35
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "ANTS - Agence nationale des titres sécurisés",
+    "statut": "EPA",
+    "programme_chef_de_file": "307 - Administration territoriale",
+    "mission_correspondant_au_programme_chef_de_file": "Administration générale et territoriale de l'État",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "ESTHER - GIP - Ensemble pour une Solidarité Thérapeutique Hospitalière en Réseau",
+    "statut": "GIP",
+    "programme_chef_de_file": "209 - Solidarité à l'égard des pays en développement",
+    "mission_correspondant_au_programme_chef_de_file": "Aide publique au développement",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "X - Ecole polytechnique",
+    "statut": "EPA",
+    "programme_chef_de_file": "144 - Environnement et prospective de la politique de défense",
+    "mission_correspondant_au_programme_chef_de_file": "Défense",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "Ecoles d'architecture - Ecoles nationales supérieures d'architecture",
+    "statut": "Catégorie",
+    "programme_chef_de_file": "224 - Transmission des savoirs et démocratisation de la culture",
+    "mission_correspondant_au_programme_chef_de_file": "Culture",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 20
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "ONCFS - Office national de la chasse et de la faune sauvage",
+    "statut": "EPA",
+    "programme_chef_de_file": "113 - Paysages, eau et biodiversité",
+    "mission_correspondant_au_programme_chef_de_file": "Écologie, développement et mobilité durables",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "Musée de l'air et de l'espace",
+    "statut": "EPA",
+    "programme_chef_de_file": "212 - Soutien de la politique de la défense",
+    "mission_correspondant_au_programme_chef_de_file": "Défense",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "Centre national des arts du cirque",
+    "statut": "Association",
+    "programme_chef_de_file": "224 - Transmission des savoirs et démocratisation de la culture",
+    "mission_correspondant_au_programme_chef_de_file": "Culture",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "Grande Chancellerie de la Légion d'Honneur",
+    "statut": "sui generis",
+    "programme_chef_de_file": "129 - Coordination du travail gouvernemental",
+    "mission_correspondant_au_programme_chef_de_file": "Direction de l'action du Gouvernement",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "INERIS - Institut national de l'environnement industriel et des risques",
+    "statut": "EPIC",
+    "programme_chef_de_file": "181 - Prévention des risques",
+    "mission_correspondant_au_programme_chef_de_file": "Écologie, développement et mobilité durables",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": "190 - Recherche dans les domaines de l'énergie, du développement et de la mobilité durables ,",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "INI - Institution nationale des Invalides",
+    "statut": "EPA",
+    "programme_chef_de_file": "169 - Reconnaissance et réparation en faveur du monde combattant",
+    "mission_correspondant_au_programme_chef_de_file": "Anciens combattants, mémoire et liens avec la nation",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "CNSMD Paris - Conservatoire national supérieur de musique et de danse de Paris",
+    "statut": "EPA",
+    "programme_chef_de_file": "224 - Transmission des savoirs et démocratisation de la culture",
+    "mission_correspondant_au_programme_chef_de_file": "Culture",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "CEREQ - Centre d'Etudes et de Recherches sur les Qualifications",
+    "statut": "EPA",
+    "programme_chef_de_file": "214 - Soutien de la politique de l'éducation nationale",
+    "mission_correspondant_au_programme_chef_de_file": "Enseignement scolaire",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": "155 - Conception, gestion et évaluation des politiques de l'emploi et du travail ,",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "Atout-France",
+    "statut": "GIE",
+    "programme_chef_de_file": "134 - Développement des entreprises et du tourisme",
+    "mission_correspondant_au_programme_chef_de_file": "Économie",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "EPIDe - Etablissement public d'insertion de la défense",
+    "statut": "EPA",
+    "programme_chef_de_file": "102 - Accès et retour à l'emploi",
+    "mission_correspondant_au_programme_chef_de_file": "Travail et emploi",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "APIJ - Agence publique pour l'immobilier de la Justice",
+    "statut": "EPA",
+    "programme_chef_de_file": "310 - Conduite et pilotage de la politique de la justice",
+    "mission_correspondant_au_programme_chef_de_file": "Justice",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "EPRUS - Etablissement de préparation et de réponse aux urgences sanitaires",
+    "statut": "EPA",
+    "programme_chef_de_file": "204 - Prévention, sécurité sanitaire et offre de soins",
+    "mission_correspondant_au_programme_chef_de_file": "Santé",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "CEREMA - Centre d'études et d'expertise sur les risques, l'environnement, la mobilité et l'aménagement",
+    "statut": "EPA",
+    "programme_chef_de_file": "217 - Conduite et pilotage des politiques de l'écologie, du développement et de la mobilité durables",
+    "mission_correspondant_au_programme_chef_de_file": "Écologie, développement et mobilité durables",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "GIP ATEN - Atelier technique des espaces naturels",
+    "statut": "GIP",
+    "programme_chef_de_file": "113 - Paysages, eau et biodiversité",
+    "mission_correspondant_au_programme_chef_de_file": "Écologie, développement et mobilité durables",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "Universcience",
+    "statut": "EPIC",
+    "programme_chef_de_file": "186 - Recherche culturelle et culture scientifique",
+    "mission_correspondant_au_programme_chef_de_file": "Recherche et enseignement supérieur",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "Parcs nationaux",
+    "statut": "Catégorie",
+    "programme_chef_de_file": "113 - Paysages, eau et biodiversité",
+    "mission_correspondant_au_programme_chef_de_file": "Écologie, développement et mobilité durables",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 11
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "FranceAgriMer",
+    "statut": "EPA",
+    "programme_chef_de_file": "154 - Économie et développement durable de l'agriculture et des territoires",
+    "mission_correspondant_au_programme_chef_de_file": "Agriculture, alimentation, forêt et affaires rurales",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "CNRS - Centre national de la recherche scientifique",
+    "statut": "EPST",
+    "programme_chef_de_file": "172 - Recherches scientifiques et technologiques pluridisciplinaires",
+    "mission_correspondant_au_programme_chef_de_file": "Recherche et enseignement supérieur",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "INP - Institut national du patrimoine",
+    "statut": "EPA",
+    "programme_chef_de_file": "224 - Transmission des savoirs et démocratisation de la culture",
+    "mission_correspondant_au_programme_chef_de_file": "Culture",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "OFDT - Observatoire Français des Drogues et des Toxicomanies",
+    "statut": "GIP",
+    "programme_chef_de_file": "129 - Coordination du travail gouvernemental",
+    "mission_correspondant_au_programme_chef_de_file": "Direction de l'action du Gouvernement",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "Musée de l'armée",
+    "statut": "EPA",
+    "programme_chef_de_file": "212 - Soutien de la politique de la défense",
+    "mission_correspondant_au_programme_chef_de_file": "Défense",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "ENSAD - Ecole nationale supérieure des arts décoratifs",
+    "statut": "EPA",
+    "programme_chef_de_file": "224 - Transmission des savoirs et démocratisation de la culture",
+    "mission_correspondant_au_programme_chef_de_file": "Culture",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "Conseil national des communes « Compagnon de la Libération »",
+    "statut": "EPA",
+    "programme_chef_de_file": "129 - Coordination du travail gouvernemental",
+    "mission_correspondant_au_programme_chef_de_file": "Direction de l'action du Gouvernement",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "ATIH - Agence technique de l'information et de l'hospitalisation",
+    "statut": "EPA",
+    "programme_chef_de_file": "204 - Prévention, sécurité sanitaire et offre de soins",
+    "mission_correspondant_au_programme_chef_de_file": "Santé",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "IHEDN - Institut des hautes études de Défense nationale",
+    "statut": "EPA",
+    "programme_chef_de_file": "129 - Coordination du travail gouvernemental",
+    "mission_correspondant_au_programme_chef_de_file": "Direction de l'action du Gouvernement",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "Universités et assimilés",
+    "statut": "Catégorie",
+    "programme_chef_de_file": "150 - Formations supérieures et recherche universitaire",
+    "mission_correspondant_au_programme_chef_de_file": "Recherche et enseignement supérieur",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 78
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "CNAP - Centre national des arts plastiques",
+    "statut": "EPA",
+    "programme_chef_de_file": "131 - Création",
+    "mission_correspondant_au_programme_chef_de_file": "Culture",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "Comédie Française",
+    "statut": "EPIC",
+    "programme_chef_de_file": "131 - Création",
+    "mission_correspondant_au_programme_chef_de_file": "Culture",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "EPV - Etablissement public du musée et du domaine national de Versailles",
+    "statut": "EPA",
+    "programme_chef_de_file": "175 - Patrimoines",
+    "mission_correspondant_au_programme_chef_de_file": "Culture",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "Musée Picasso",
+    "statut": "EPA",
+    "programme_chef_de_file": "175 - Patrimoines",
+    "mission_correspondant_au_programme_chef_de_file": "Culture",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "Musée d'Orsay et musée de l'Orangerie",
+    "statut": "EPA",
+    "programme_chef_de_file": "175 - Patrimoines",
+    "mission_correspondant_au_programme_chef_de_file": "Culture",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "CEA - Commissariat à l'énergie atomique et aux énergies alternatives",
+    "statut": "EPIC",
+    "programme_chef_de_file": "172 - Recherches scientifiques et technologiques pluridisciplinaires",
+    "mission_correspondant_au_programme_chef_de_file": "Recherche et enseignement supérieur",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": "190 - Recherche dans les domaines de l'énergie, du développement et de la mobilité durables , 191 - Recherche duale (civile et militaire) , 212 - Soutien de la politique de la défense ,",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "INTEFP - Institut national du travail, de l'emploi et de la formation professionnelle",
+    "statut": "EPA",
+    "programme_chef_de_file": "155 - Conception, gestion et évaluation des politiques de l'emploi et du travail",
+    "mission_correspondant_au_programme_chef_de_file": "Travail et emploi",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "SUPELEC - Ecole supérieure d'électricité",
+    "statut": "Association",
+    "programme_chef_de_file": "192 - Recherche et enseignement supérieur en matière économique et industrielle",
+    "mission_correspondant_au_programme_chef_de_file": "Recherche et enseignement supérieur",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "CAPA - Cité de l'architecture et du patrimoine",
+    "statut": "EPIC",
+    "programme_chef_de_file": "175 - Patrimoines",
+    "mission_correspondant_au_programme_chef_de_file": "Culture",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "Rmn- Grand Palais - Réunion des musées nationaux et du Grand Palais des Champs Elysées",
+    "statut": "EPIC",
+    "programme_chef_de_file": "175 - Patrimoines",
+    "mission_correspondant_au_programme_chef_de_file": "Culture",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "ISAE - Institut supérieur de l'aéronautique et de l'espace",
+    "statut": "EPSCP",
+    "programme_chef_de_file": "144 - Environnement et prospective de la politique de défense",
+    "mission_correspondant_au_programme_chef_de_file": "Défense",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "IFP Energies nouvelles",
+    "statut": "EPIC",
+    "programme_chef_de_file": "190 - Recherche dans les domaines de l'énergie, du développement et de la mobilité durables",
+    "mission_correspondant_au_programme_chef_de_file": "Recherche et enseignement supérieur",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "ENIM - Etablissement national des invalides de la marine",
+    "statut": "EPA",
+    "programme_chef_de_file": "197 - Régimes de retraite et de sécurité sociale des marins",
+    "mission_correspondant_au_programme_chef_de_file": "Régimes sociaux et de retraite",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "Musée Guimet",
+    "statut": "EPA",
+    "programme_chef_de_file": "175 - Patrimoines",
+    "mission_correspondant_au_programme_chef_de_file": "Culture",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "Musée national de la marine",
+    "statut": "EPA",
+    "programme_chef_de_file": "212 - Soutien de la politique de la défense",
+    "mission_correspondant_au_programme_chef_de_file": "Défense",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "ANAH - Agence nationale de l'habitat",
+    "statut": "EPA",
+    "programme_chef_de_file": "135 - Urbanisme, territoires et amélioration de l'habitat",
+    "mission_correspondant_au_programme_chef_de_file": "Égalité des territoires, logement et ville",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "Associations de coordination technique agricole et des industries agroalimentaires",
+    "statut": "Catégorie",
+    "programme_chef_de_file": "142 - Enseignement supérieur et recherche agricoles",
+    "mission_correspondant_au_programme_chef_de_file": "Recherche et enseignement supérieur",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 2
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "CNL - Centre national du livre",
+    "statut": "EPA",
+    "programme_chef_de_file": "334 - Livre et industries culturelles",
+    "mission_correspondant_au_programme_chef_de_file": "Médias, livre et industries culturelles",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "Réseau des oeuvres universitaires et scolaires",
+    "statut": "Catégorie",
+    "programme_chef_de_file": "231 - Vie étudiante",
+    "mission_correspondant_au_programme_chef_de_file": "Recherche et enseignement supérieur",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 29
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "IPEV - Institut polaire français Paul-Emile Victor",
+    "statut": "GIP",
+    "programme_chef_de_file": "172 - Recherches scientifiques et technologiques pluridisciplinaires",
+    "mission_correspondant_au_programme_chef_de_file": "Recherche et enseignement supérieur",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "Musée Henner",
+    "statut": "EPA",
+    "programme_chef_de_file": "175 - Patrimoines",
+    "mission_correspondant_au_programme_chef_de_file": "Culture",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "OFPRA - Office français de protection des réfugiés et apatrides",
+    "statut": "EPA",
+    "programme_chef_de_file": "303 - Immigration et asile",
+    "mission_correspondant_au_programme_chef_de_file": "Immigration, asile et intégration",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "ENSMIS - Ecole nationale supérieure des métiers de l'image et du son",
+    "statut": "EPIC",
+    "programme_chef_de_file": "224 - Transmission des savoirs et démocratisation de la culture",
+    "mission_correspondant_au_programme_chef_de_file": "Culture",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "ENSTA ParisTech - Ecole nationale supérieure de techniques avancées ParisTech",
+    "statut": "EPA",
+    "programme_chef_de_file": "144 - Environnement et prospective de la politique de défense",
+    "mission_correspondant_au_programme_chef_de_file": "Défense",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "FNPCA - Fonds national de promotion du commerce et de l'artisanat",
+    "statut": "EPA",
+    "programme_chef_de_file": "134 - Développement des entreprises et du tourisme",
+    "mission_correspondant_au_programme_chef_de_file": "Économie",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "IHEST - Institut des Hautes Etudes pour la Science et la Technologie",
+    "statut": "EPA",
+    "programme_chef_de_file": "172 - Recherches scientifiques et technologiques pluridisciplinaires",
+    "mission_correspondant_au_programme_chef_de_file": "Recherche et enseignement supérieur",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "ANR - Agence nationale de la recherche",
+    "statut": "EPA",
+    "programme_chef_de_file": "172 - Recherches scientifiques et technologiques pluridisciplinaires",
+    "mission_correspondant_au_programme_chef_de_file": "Recherche et enseignement supérieur",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "Etablissement public Cité de la céramique - Sèvres et Limoges",
+    "statut": "EPA",
+    "programme_chef_de_file": "131 - Création",
+    "mission_correspondant_au_programme_chef_de_file": "Culture",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "EPARECA - Etablissement public national pour l'aménagement et la restructuration des espaces commerciaux et artisanaux",
+    "statut": "EPIC",
+    "programme_chef_de_file": "134 - Développement des entreprises et du tourisme",
+    "mission_correspondant_au_programme_chef_de_file": "Économie",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "ONF - Office national des forêts",
+    "statut": "EPIC",
+    "programme_chef_de_file": "149 - Forêt",
+    "mission_correspondant_au_programme_chef_de_file": "Agriculture, alimentation, forêt et affaires rurales",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": "113 - Paysages, eau et biodiversité , 181 - Prévention des risques ,",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "Centre INFFO - Centre pour le développement de l'information sur la formation permanente",
+    "statut": "Association",
+    "programme_chef_de_file": "103 - Accompagnement des mutations économiques et développement de l'emploi",
+    "mission_correspondant_au_programme_chef_de_file": "Travail et emploi",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "Fonds de solidarité",
+    "statut": "EPA",
+    "programme_chef_de_file": "102 - Accès et retour à l'emploi",
+    "mission_correspondant_au_programme_chef_de_file": "Travail et emploi",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "Centres de ressources, d'expertise et de performance sportives",
+    "statut": "Catégorie",
+    "programme_chef_de_file": "219 - Sport",
+    "mission_correspondant_au_programme_chef_de_file": "Sport, jeunesse et vie associative",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 16
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "INAO - Institut national de l'origine et de la qualité",
+    "statut": "EPA",
+    "programme_chef_de_file": "154 - Économie et développement durable de l'agriculture et des territoires",
+    "mission_correspondant_au_programme_chef_de_file": "Agriculture, alimentation, forêt et affaires rurales",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "GENES - Groupement des écoles nationales d'économie et statistique",
+    "statut": "EPSCP",
+    "programme_chef_de_file": "192 - Recherche et enseignement supérieur en matière économique et industrielle",
+    "mission_correspondant_au_programme_chef_de_file": "Recherche et enseignement supérieur",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "ENSPolice - Ecole nationale supérieure de la police",
+    "statut": "EPA",
+    "programme_chef_de_file": "176 - Police nationale",
+    "mission_correspondant_au_programme_chef_de_file": "Sécurités",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "INPES - Institut national de prévention et d'éducation pour la santé",
+    "statut": "EPA",
+    "programme_chef_de_file": "204 - Prévention, sécurité sanitaire et offre de soins",
+    "mission_correspondant_au_programme_chef_de_file": "Santé",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "ONEMA - Office national de l'eau et des milieux aquatiques",
+    "statut": "EPA",
+    "programme_chef_de_file": "113 - Paysages, eau et biodiversité",
+    "mission_correspondant_au_programme_chef_de_file": "Écologie, développement et mobilité durables",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "SHOM - Service hydrographique et océanographique de la marine",
+    "statut": "EPA",
+    "programme_chef_de_file": "212 - Soutien de la politique de la défense",
+    "mission_correspondant_au_programme_chef_de_file": "Défense",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "BnF - Bibliothèque nationale de France",
+    "statut": "EPA",
+    "programme_chef_de_file": "334 - Livre et industries culturelles",
+    "mission_correspondant_au_programme_chef_de_file": "Médias, livre et industries culturelles",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "Ecole du Louvre",
+    "statut": "EPA",
+    "programme_chef_de_file": "224 - Transmission des savoirs et démocratisation de la culture",
+    "mission_correspondant_au_programme_chef_de_file": "Culture",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "Etablissement public du château de Fontainebleau",
+    "statut": "EPA",
+    "programme_chef_de_file": "175 - Patrimoines",
+    "mission_correspondant_au_programme_chef_de_file": "Culture",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "CIEP - Centre international d'études pédagogiques",
+    "statut": "EPA",
+    "programme_chef_de_file": "214 - Soutien de la politique de l'éducation nationale",
+    "mission_correspondant_au_programme_chef_de_file": "Enseignement scolaire",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "AFA - Agence française de l'adoption",
+    "statut": "GIP",
+    "programme_chef_de_file": "106 - Actions en faveur des familles vulnérables",
+    "mission_correspondant_au_programme_chef_de_file": "Solidarité, insertion et égalité des chances",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "ODEADOM - Office de développement de l'économie agricole d'Outre-mer",
+    "statut": "EPA",
+    "programme_chef_de_file": "154 - Économie et développement durable de l'agriculture et des territoires",
+    "mission_correspondant_au_programme_chef_de_file": "Agriculture, alimentation, forêt et affaires rurales",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "INRAP - Institut national de recherches archéologiques préventives",
+    "statut": "EPA",
+    "programme_chef_de_file": "175 - Patrimoines",
+    "mission_correspondant_au_programme_chef_de_file": "Culture",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "Institut Français",
+    "statut": "EPIC",
+    "programme_chef_de_file": "185 - Diplomatie culturelle et d'influence",
+    "mission_correspondant_au_programme_chef_de_file": "Action extérieure de l'État",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "OPPIC - Opérateur du patrimoine et des projets immobiliers de la Culture",
+    "statut": "EPA",
+    "programme_chef_de_file": "224 - Transmission des savoirs et démocratisation de la culture",
+    "mission_correspondant_au_programme_chef_de_file": "Culture",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "ADALIS - Addictions Drogues Alcool Info Service",
+    "statut": "GIP",
+    "programme_chef_de_file": "204 - Prévention, sécurité sanitaire et offre de soins",
+    "mission_correspondant_au_programme_chef_de_file": "Santé",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "BPI - Bibliothèque publique d'information",
+    "statut": "EPA",
+    "programme_chef_de_file": "334 - Livre et industries culturelles",
+    "mission_correspondant_au_programme_chef_de_file": "Médias, livre et industries culturelles",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "Météo-France",
+    "statut": "EPA",
+    "programme_chef_de_file": "170 - Météorologie",
+    "mission_correspondant_au_programme_chef_de_file": "Écologie, développement et mobilité durables",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": "181 - Prévention des risques ,",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "BRGM - Bureau de recherches géologiques et minières",
+    "statut": "EPIC",
+    "programme_chef_de_file": "187 - Recherche dans le domaine de la gestion des milieux et des ressources",
+    "mission_correspondant_au_programme_chef_de_file": "Recherche et enseignement supérieur",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": "181 - Prévention des risques ,",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "Agence des aires marines protégées",
+    "statut": "EPA",
+    "programme_chef_de_file": "113 - Paysages, eau et biodiversité",
+    "mission_correspondant_au_programme_chef_de_file": "Écologie, développement et mobilité durables",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "ENSCI - Ecole nationale supérieure de création industrielle",
+    "statut": "EPIC",
+    "programme_chef_de_file": "224 - Transmission des savoirs et démocratisation de la culture",
+    "mission_correspondant_au_programme_chef_de_file": "Culture",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "OFII - Office français de l'immigration et de l'intégration",
+    "statut": "EPA",
+    "programme_chef_de_file": "104 - Intégration et accès à la nationalité française",
+    "mission_correspondant_au_programme_chef_de_file": "Immigration, asile et intégration",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "AFR - Académie de France à Rome",
+    "statut": "EPA",
+    "programme_chef_de_file": "224 - Transmission des savoirs et démocratisation de la culture",
+    "mission_correspondant_au_programme_chef_de_file": "Culture",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "EPSF - Etablissement public de sécurité ferroviaire",
+    "statut": "EPA",
+    "programme_chef_de_file": "203 - Infrastructures et services de transports",
+    "mission_correspondant_au_programme_chef_de_file": "Écologie, développement et mobilité durables",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "CNSAD - Conservatoire national supérieur d'art dramatique",
+    "statut": "EPA",
+    "programme_chef_de_file": "224 - Transmission des savoirs et démocratisation de la culture",
+    "mission_correspondant_au_programme_chef_de_file": "Culture",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "VNF - Voies navigables de France",
+    "statut": "EPA",
+    "programme_chef_de_file": "203 - Infrastructures et services de transports",
+    "mission_correspondant_au_programme_chef_de_file": "Écologie, développement et mobilité durables",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "IGN - Institut national de l'information géographique et forestière (fusion de l'IGN et de l'IFN)",
+    "statut": "EPA",
+    "programme_chef_de_file": "159 - Information géographique et cartographique",
+    "mission_correspondant_au_programme_chef_de_file": "Écologie, développement et mobilité durables",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "CEE - Centre d'études de l'emploi",
+    "statut": "EPA",
+    "programme_chef_de_file": "155 - Conception, gestion et évaluation des politiques de l'emploi et du travail",
+    "mission_correspondant_au_programme_chef_de_file": "Travail et emploi",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "CNV - Centre national de la chanson, des variétés et du jazz",
+    "statut": "EPIC",
+    "programme_chef_de_file": "131 - Création",
+    "mission_correspondant_au_programme_chef_de_file": "Culture",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "ONERA - Office national d'études et de recherches aérospatiales",
+    "statut": "EPIC",
+    "programme_chef_de_file": "144 - Environnement et prospective de la politique de défense",
+    "mission_correspondant_au_programme_chef_de_file": "Défense",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "CNSMD Lyon - Conservatoire national supérieur de musique et de danse de Lyon",
+    "statut": "EPA",
+    "programme_chef_de_file": "224 - Transmission des savoirs et démocratisation de la culture",
+    "mission_correspondant_au_programme_chef_de_file": "Culture",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "MuCEM - Musée des civilisations de l'Europe et de la Méditerranée",
+    "statut": "EPA",
+    "programme_chef_de_file": "175 - Patrimoines",
+    "mission_correspondant_au_programme_chef_de_file": "Culture",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "INHES-J - Institut national des hautes études de la sécurité et de la justice",
+    "statut": "EPA",
+    "programme_chef_de_file": "129 - Coordination du travail gouvernemental",
+    "mission_correspondant_au_programme_chef_de_file": "Direction de l'action du Gouvernement",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "IRSN - Institut de radioprotection et de sûreté nucléaire",
+    "statut": "EPIC",
+    "programme_chef_de_file": "190 - Recherche dans les domaines de l'énergie, du développement et de la mobilité durables",
+    "mission_correspondant_au_programme_chef_de_file": "Recherche et enseignement supérieur",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": "181 - Prévention des risques , 212 - Soutien de la politique de la défense ,",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "Ecoles et formations d'ingénieurs",
+    "statut": "Catégorie",
+    "programme_chef_de_file": "150 - Formations supérieures et recherche universitaire",
+    "mission_correspondant_au_programme_chef_de_file": "Recherche et enseignement supérieur",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 38
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "CITEPA - Centre interprofessionnel technique d'études de la pollution atmosphérique",
+    "statut": "Association",
+    "programme_chef_de_file": "174 - Énergie, climat et après-mines",
+    "mission_correspondant_au_programme_chef_de_file": "Écologie, développement et mobilité durables",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "LNE - Laboratoire national de métrologie et d'essais",
+    "statut": "EPIC",
+    "programme_chef_de_file": "134 - Développement des entreprises et du tourisme",
+    "mission_correspondant_au_programme_chef_de_file": "Économie",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "AFITF - Agence de financement des infrastructures de transport de France",
+    "statut": "EPA",
+    "programme_chef_de_file": "203 - Infrastructures et services de transports",
+    "mission_correspondant_au_programme_chef_de_file": "Écologie, développement et mobilité durables",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "IFSTTAR - Institut français des sciences et technologies des transports, de l'aménagement et des réseaux",
+    "statut": "EPST",
+    "programme_chef_de_file": "190 - Recherche dans les domaines de l'énergie, du développement et de la mobilité durables",
+    "mission_correspondant_au_programme_chef_de_file": "Recherche et enseignement supérieur",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "Ecoles d'art en Région",
+    "statut": "Catégorie",
+    "programme_chef_de_file": "224 - Transmission des savoirs et démocratisation de la culture",
+    "mission_correspondant_au_programme_chef_de_file": "Culture",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 7
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "Opéra comique",
+    "statut": "EPIC",
+    "programme_chef_de_file": "131 - Création",
+    "mission_correspondant_au_programme_chef_de_file": "Culture",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "ANFr - Agence nationale des fréquences",
+    "statut": "EPA",
+    "programme_chef_de_file": "134 - Développement des entreprises et du tourisme",
+    "mission_correspondant_au_programme_chef_de_file": "Économie",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "ENSBA - Ecole nationale supérieure des beaux-arts",
+    "statut": "EPA",
+    "programme_chef_de_file": "224 - Transmission des savoirs et démocratisation de la culture",
+    "mission_correspondant_au_programme_chef_de_file": "Culture",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "InVS - Institut de veille sanitaire",
+    "statut": "EPA",
+    "programme_chef_de_file": "204 - Prévention, sécurité sanitaire et offre de soins",
+    "mission_correspondant_au_programme_chef_de_file": "Santé",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": "181 - Prévention des risques ,",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "Pôle emploi",
+    "statut": "sui generis",
+    "programme_chef_de_file": "102 - Accès et retour à l'emploi",
+    "mission_correspondant_au_programme_chef_de_file": "Travail et emploi",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "EHESP - Ecole des hautes études en santé publique",
+    "statut": "EPSCP",
+    "programme_chef_de_file": "204 - Prévention, sécurité sanitaire et offre de soins",
+    "mission_correspondant_au_programme_chef_de_file": "Santé",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "INSEP - Institut national du sport, de l'expertise et de la performance",
+    "statut": "EPSCP",
+    "programme_chef_de_file": "219 - Sport",
+    "mission_correspondant_au_programme_chef_de_file": "Sport, jeunesse et vie associative",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "CNAC-GP - Centre national d'art et de culture - Georges Pompidou",
+    "statut": "EPA",
+    "programme_chef_de_file": "175 - Patrimoines",
+    "mission_correspondant_au_programme_chef_de_file": "Culture",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "INED - Institut national d'études démographiques",
+    "statut": "EPST",
+    "programme_chef_de_file": "172 - Recherches scientifiques et technologiques pluridisciplinaires",
+    "mission_correspondant_au_programme_chef_de_file": "Recherche et enseignement supérieur",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "UBIFRANCE - Agence française pour le développement international des entreprises",
+    "statut": "EPIC",
+    "programme_chef_de_file": "134 - Développement des entreprises et du tourisme",
+    "mission_correspondant_au_programme_chef_de_file": "Économie",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "ANSM - Agence nationale de sécurité du médicament et des produits de santé",
+    "statut": "EPA",
+    "programme_chef_de_file": "204 - Prévention, sécurité sanitaire et offre de soins",
+    "mission_correspondant_au_programme_chef_de_file": "Santé",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "Etablissement public du Marais poitevin",
+    "statut": "EPA",
+    "programme_chef_de_file": "113 - Paysages, eau et biodiversité",
+    "mission_correspondant_au_programme_chef_de_file": "Écologie, développement et mobilité durables",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "IRD - Institut de recherche pour le développement",
+    "statut": "EPST",
+    "programme_chef_de_file": "187 - Recherche dans le domaine de la gestion des milieux et des ressources",
+    "mission_correspondant_au_programme_chef_de_file": "Recherche et enseignement supérieur",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "Ecoles d'enseignement supérieur agricole et vétérinaire",
+    "statut": "Catégorie",
+    "programme_chef_de_file": "142 - Enseignement supérieur et recherche agricoles",
+    "mission_correspondant_au_programme_chef_de_file": "Recherche et enseignement supérieur",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 12
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "INJEP - Institut national de la jeunesse et de l'éducation populaire",
+    "statut": "EPA",
+    "programme_chef_de_file": "163 - Jeunesse et vie associative",
+    "mission_correspondant_au_programme_chef_de_file": "Sport, jeunesse et vie associative",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "INPS - Institut national de police scientifique",
+    "statut": "EPA",
+    "programme_chef_de_file": "176 - Police nationale",
+    "mission_correspondant_au_programme_chef_de_file": "Sécurités",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "ASC - Agence du Service Civique",
+    "statut": "GIP",
+    "programme_chef_de_file": "163 - Jeunesse et vie associative",
+    "mission_correspondant_au_programme_chef_de_file": "Sport, jeunesse et vie associative",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "CNDS - Centre national pour le développement du sport",
+    "statut": "EPA",
+    "programme_chef_de_file": "219 - Sport",
+    "mission_correspondant_au_programme_chef_de_file": "Sport, jeunesse et vie associative",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "ENM - Ecole nationale de la magistrature",
+    "statut": "EPA",
+    "programme_chef_de_file": "166 - Justice judiciaire",
+    "mission_correspondant_au_programme_chef_de_file": "Justice",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "Cinémathèque française",
+    "statut": "Association",
+    "programme_chef_de_file": "224 - Transmission des savoirs et démocratisation de la culture",
+    "mission_correspondant_au_programme_chef_de_file": "Culture",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "Musée des arts décoratifs",
+    "statut": "Association",
+    "programme_chef_de_file": "175 - Patrimoines",
+    "mission_correspondant_au_programme_chef_de_file": "Culture",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "CELRL - Conservatoire de l'espace littoral et des rivages lacustres",
+    "statut": "EPA",
+    "programme_chef_de_file": "113 - Paysages, eau et biodiversité",
+    "mission_correspondant_au_programme_chef_de_file": "Écologie, développement et mobilité durables",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "ANGDM - Agence nationale pour la garantie des droits des mineurs",
+    "statut": "EPA",
+    "programme_chef_de_file": "174 - Énergie, climat et après-mines",
+    "mission_correspondant_au_programme_chef_de_file": "Écologie, développement et mobilité durables",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "Génopole",
+    "statut": "GIP",
+    "programme_chef_de_file": "172 - Recherches scientifiques et technologiques pluridisciplinaires",
+    "mission_correspondant_au_programme_chef_de_file": "Recherche et enseignement supérieur",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "ONISEP - Office national d'information sur les enseignements et les professions",
+    "statut": "EPA",
+    "programme_chef_de_file": "214 - Soutien de la politique de l'éducation nationale",
+    "mission_correspondant_au_programme_chef_de_file": "Enseignement scolaire",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "Instituts régionaux d'administration",
+    "statut": "Catégorie",
+    "programme_chef_de_file": "148 - Fonction publique",
+    "mission_correspondant_au_programme_chef_de_file": "Gestion des finances publiques et des ressources humaines",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 5
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "IFREMER - Institut français de recherche pour l'exploitation de la mer",
+    "statut": "EPIC",
+    "programme_chef_de_file": "187 - Recherche dans le domaine de la gestion des milieux et des ressources",
+    "mission_correspondant_au_programme_chef_de_file": "Recherche et enseignement supérieur",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": "113 - Paysages, eau et biodiversité ,",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "Ecoles nationales des sports",
+    "statut": "Catégorie",
+    "programme_chef_de_file": "219 - Sport",
+    "mission_correspondant_au_programme_chef_de_file": "Sport, jeunesse et vie associative",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 2
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "TNS - Théâtre national de Strasbourg",
+    "statut": "EPIC",
+    "programme_chef_de_file": "131 - Création",
+    "mission_correspondant_au_programme_chef_de_file": "Culture",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "GEODERIS - Groupement d'Intérêt Public INERIS/BRGM",
+    "statut": "GIP",
+    "programme_chef_de_file": "181 - Prévention des risques",
+    "mission_correspondant_au_programme_chef_de_file": "Écologie, développement et mobilité durables",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "Centre national de la danse",
+    "statut": "EPIC",
+    "programme_chef_de_file": "131 - Création",
+    "mission_correspondant_au_programme_chef_de_file": "Culture",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "Théâtre national de l'Odéon",
+    "statut": "EPIC",
+    "programme_chef_de_file": "131 - Création",
+    "mission_correspondant_au_programme_chef_de_file": "Culture",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "Agences régionales de santé",
+    "statut": "Catégorie",
+    "programme_chef_de_file": "124 - Conduite et soutien des politiques sanitaires, sociales, du sport, de la jeunesse et de la vie associative",
+    "mission_correspondant_au_programme_chef_de_file": "Solidarité, insertion et égalité des chances",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 26
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "INSERM - Institut national de la santé et de la recherche médicale",
+    "statut": "EPST",
+    "programme_chef_de_file": "172 - Recherches scientifiques et technologiques pluridisciplinaires",
+    "mission_correspondant_au_programme_chef_de_file": "Recherche et enseignement supérieur",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "EPAURIF - Etablissement public d'aménagement universitaire de la région Ile-de-France",
+    "statut": "EPA",
+    "programme_chef_de_file": "150 - Formations supérieures et recherche universitaire",
+    "mission_correspondant_au_programme_chef_de_file": "Recherche et enseignement supérieur",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "ANDRA - Agence nationale pour la gestion des déchets radioactifs",
+    "statut": "EPIC",
+    "programme_chef_de_file": "174 - Énergie, climat et après-mines",
+    "mission_correspondant_au_programme_chef_de_file": "Écologie, développement et mobilité durables",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": "181 - Prévention des risques ,",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "INRIA - Institut national de recherche en informatique et en automatique",
+    "statut": "EPST",
+    "programme_chef_de_file": "172 - Recherches scientifiques et technologiques pluridisciplinaires",
+    "mission_correspondant_au_programme_chef_de_file": "Recherche et enseignement supérieur",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "Mission de recherche \"Droit et Justice\"",
+    "statut": "GIP",
+    "programme_chef_de_file": "310 - Conduite et pilotage de la politique de la justice",
+    "mission_correspondant_au_programme_chef_de_file": "Justice",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "CIFAD - Centre Interministériel de Formation Anti Drogue",
+    "statut": "GIP",
+    "programme_chef_de_file": "129 - Coordination du travail gouvernemental",
+    "mission_correspondant_au_programme_chef_de_file": "Direction de l'action du Gouvernement",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "MNS - Musée national du sport",
+    "statut": "EPA",
+    "programme_chef_de_file": "219 - Sport",
+    "mission_correspondant_au_programme_chef_de_file": "Sport, jeunesse et vie associative",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "ANSéS - Agence nationale de sécurité sanitaire, de l'alimentation, de l'environnement et du travail",
+    "statut": "EPA",
+    "programme_chef_de_file": "206 - Sécurité et qualité sanitaires de l'alimentation",
+    "mission_correspondant_au_programme_chef_de_file": "Agriculture, alimentation, forêt et affaires rurales",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": "111 - Amélioration de la qualité de l'emploi et des relations du travail , 181 - Prévention des risques , 190 - Recherche dans les domaines de l'énergie, du développement et de la mobilité durables , 204 - Prévention, sécurité sanitaire et offre de soins ,",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "EPPGHV - Etablissement public du parc et de la grande halle de la Villette",
+    "statut": "EPIC",
+    "programme_chef_de_file": "131 - Création",
+    "mission_correspondant_au_programme_chef_de_file": "Culture",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "CNC - Centre national du cinéma et de l'image animée",
+    "statut": "EPA",
+    "programme_chef_de_file": "224 - Transmission des savoirs et démocratisation de la culture",
+    "mission_correspondant_au_programme_chef_de_file": "Culture",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "CMN - Centre des monuments nationaux",
+    "statut": "EPA",
+    "programme_chef_de_file": "175 - Patrimoines",
+    "mission_correspondant_au_programme_chef_de_file": "Culture",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "ENTPE - Ecole nationale des travaux publics de l'Etat",
+    "statut": "EPSCP",
+    "programme_chef_de_file": "217 - Conduite et pilotage des politiques de l'écologie, du développement et de la mobilité durables",
+    "mission_correspondant_au_programme_chef_de_file": "Écologie, développement et mobilité durables",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "AEFE - Agence pour l'enseignement français à l'étranger",
+    "statut": "EPA",
+    "programme_chef_de_file": "185 - Diplomatie culturelle et d'influence",
+    "mission_correspondant_au_programme_chef_de_file": "Action extérieure de l'État",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "Musée du Louvre",
+    "statut": "EPA",
+    "programme_chef_de_file": "175 - Patrimoines",
+    "mission_correspondant_au_programme_chef_de_file": "Culture",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "CNPF - Centre national de la propriété forestière",
+    "statut": "EPA",
+    "programme_chef_de_file": "149 - Forêt",
+    "mission_correspondant_au_programme_chef_de_file": "Agriculture, alimentation, forêt et affaires rurales",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "Académie des technologies",
+    "statut": "EPA",
+    "programme_chef_de_file": "172 - Recherches scientifiques et technologiques pluridisciplinaires",
+    "mission_correspondant_au_programme_chef_de_file": "Recherche et enseignement supérieur",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "AFII - Agence française pour les investissements internationaux",
+    "statut": "EPIC",
+    "programme_chef_de_file": "134 - Développement des entreprises et du tourisme",
+    "mission_correspondant_au_programme_chef_de_file": "Économie",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": "112 - Impulsion et coordination de la politique d'aménagement du territoire ,",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "OST - Observatoire des sciences et des techniques",
+    "statut": "GIP",
+    "programme_chef_de_file": "172 - Recherches scientifiques et technologiques pluridisciplinaires",
+    "mission_correspondant_au_programme_chef_de_file": "Recherche et enseignement supérieur",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "ONAC-VG - Office national des anciens combattants et victimes de guerre",
+    "statut": "EPA",
+    "programme_chef_de_file": "169 - Reconnaissance et réparation en faveur du monde combattant",
+    "mission_correspondant_au_programme_chef_de_file": "Anciens combattants, mémoire et liens avec la nation",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "CNG - Centre national de gestion des praticiens hospitaliers et des personnels de direction de la fonction publique hospitalière",
+    "statut": "EPA",
+    "programme_chef_de_file": "204 - Prévention, sécurité sanitaire et offre de soins",
+    "mission_correspondant_au_programme_chef_de_file": "Santé",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "ENSM - Ecole nationale supérieure maritime",
+    "statut": "EPSCP",
+    "programme_chef_de_file": "205 - Sécurité et affaires maritimes, pêche et aquaculture",
+    "mission_correspondant_au_programme_chef_de_file": "Écologie, développement et mobilité durables",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "ADEME - Agence de l'environnement et de la maîtrise de l'énergie",
+    "statut": "EPIC",
+    "programme_chef_de_file": "181 - Prévention des risques",
+    "mission_correspondant_au_programme_chef_de_file": "Écologie, développement et mobilité durables",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": "190 - Recherche dans les domaines de l'énergie, du développement et de la mobilité durables ,",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "ASP - Agence de services et de paiement",
+    "statut": "EPA",
+    "programme_chef_de_file": "154 - Économie et développement durable de l'agriculture et des territoires",
+    "mission_correspondant_au_programme_chef_de_file": "Agriculture, alimentation, forêt et affaires rurales",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": "102 - Accès et retour à l'emploi ,",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "ENAC - Ecole nationale de l'aviation civile",
+    "statut": "EPA",
+    "programme_chef_de_file": "613 - Soutien aux prestations de l'aviation civile",
+    "mission_correspondant_au_programme_chef_de_file": "Contrôle et exploitation aériens",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "Cité de la musique",
+    "statut": "EPIC",
+    "programme_chef_de_file": "131 - Création",
+    "mission_correspondant_au_programme_chef_de_file": "Culture",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "Ensemble intercontemporain",
+    "statut": "Association",
+    "programme_chef_de_file": "131 - Création",
+    "mission_correspondant_au_programme_chef_de_file": "Culture",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "INRA - Institut national de la recherche agronomique",
+    "statut": "EPST",
+    "programme_chef_de_file": "187 - Recherche dans le domaine de la gestion des milieux et des ressources",
+    "mission_correspondant_au_programme_chef_de_file": "Recherche et enseignement supérieur",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": "142 - Enseignement supérieur et recherche agricoles ,",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "ENPC - Ecole nationale des Ponts et Chaussées",
+    "statut": "EPSCP",
+    "programme_chef_de_file": "217 - Conduite et pilotage des politiques de l'écologie, du développement et de la mobilité durables",
+    "mission_correspondant_au_programme_chef_de_file": "Écologie, développement et mobilité durables",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "Théâtre national de Chaillot",
+    "statut": "EPIC",
+    "programme_chef_de_file": "131 - Création",
+    "mission_correspondant_au_programme_chef_de_file": "Culture",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "ECPAD - Etablissement de communication et de production audiovisuelle de la défense",
+    "statut": "EPA",
+    "programme_chef_de_file": "212 - Soutien de la politique de la défense",
+    "mission_correspondant_au_programme_chef_de_file": "Défense",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "CIRAD - Centre de coopération internationale en recherche agronomique pour le développement",
+    "statut": "EPIC",
+    "programme_chef_de_file": "187 - Recherche dans le domaine de la gestion des milieux et des ressources",
+    "mission_correspondant_au_programme_chef_de_file": "Recherche et enseignement supérieur",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "ABM - Agence de biomédecine",
+    "statut": "EPA",
+    "programme_chef_de_file": "204 - Prévention, sécurité sanitaire et offre de soins",
+    "mission_correspondant_au_programme_chef_de_file": "Santé",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "Opéra national de Paris",
+    "statut": "EPIC",
+    "programme_chef_de_file": "131 - Création",
+    "mission_correspondant_au_programme_chef_de_file": "Culture",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "Orchestre de Paris",
+    "statut": "Association",
+    "programme_chef_de_file": "131 - Création",
+    "mission_correspondant_au_programme_chef_de_file": "Culture",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "IFCE - Institut français du cheval et de l'équitation",
+    "statut": "EPA",
+    "programme_chef_de_file": "154 - Économie et développement durable de l'agriculture et des territoires",
+    "mission_correspondant_au_programme_chef_de_file": "Agriculture, alimentation, forêt et affaires rurales",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "INFOMA - Institut national de formation des personnels du ministère de l'agriculture",
+    "statut": "EPA",
+    "programme_chef_de_file": "215 - Conduite et pilotage des politiques de l'agriculture",
+    "mission_correspondant_au_programme_chef_de_file": "Agriculture, alimentation, forêt et affaires rurales",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "LADOM - L'agence de l'Outre-mer pour la mobilité (ex-ANT)",
+    "statut": "Société d'Etat",
+    "programme_chef_de_file": "138 - Emploi outre-mer",
+    "mission_correspondant_au_programme_chef_de_file": "Outre-mer",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "EPPJP - Etablissement Public du Palais de Justice de Paris",
+    "statut": "EPA",
+    "programme_chef_de_file": "310 - Conduite et pilotage de la politique de la justice",
+    "mission_correspondant_au_programme_chef_de_file": "Justice",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "INCa - Institut National du Cancer",
+    "statut": "GIP",
+    "programme_chef_de_file": "204 - Prévention, sécurité sanitaire et offre de soins",
+    "mission_correspondant_au_programme_chef_de_file": "Santé",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "IRSTEA - Institut national de recherche en sciences et technologies pour l'environnement et l'agriculture (ex-CEMAGREF)",
+    "statut": "EPST",
+    "programme_chef_de_file": "187 - Recherche dans le domaine de la gestion des milieux et des ressources",
+    "mission_correspondant_au_programme_chef_de_file": "Recherche et enseignement supérieur",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": "142 - Enseignement supérieur et recherche agricoles , 181 - Prévention des risques ,",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "Théâtre national de la Colline",
+    "statut": "EPIC",
+    "programme_chef_de_file": "131 - Création",
+    "mission_correspondant_au_programme_chef_de_file": "Culture",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "ANTAI - Agence nationale de traitement automatisé des infractions",
+    "statut": "EPA",
+    "programme_chef_de_file": "753 - Contrôle et modernisation de la politique de la circulation et du stationnement routiers",
+    "mission_correspondant_au_programme_chef_de_file": "Contrôle de la circulation et du stationnement routiers",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "CAMPUS FRANCE - Agence de promotion des formations et des échanges éducatifs et scientifiques (EGIDE + Campus France)",
+    "statut": "EPIC",
+    "programme_chef_de_file": "185 - Diplomatie culturelle et d'influence",
+    "mission_correspondant_au_programme_chef_de_file": "Action extérieure de l'État",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": "150 - Formations supérieures et recherche universitaire ,",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "Opérateurs de soutien à l'enseignement supérieur et à la recherche",
+    "statut": "Catégorie",
+    "programme_chef_de_file": "150 - Formations supérieures et recherche universitaire",
+    "mission_correspondant_au_programme_chef_de_file": "Recherche et enseignement supérieur",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 40
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "Etablissement public du domaine de Chambord",
+    "statut": "EPIC",
+    "programme_chef_de_file": "175 - Patrimoines",
+    "mission_correspondant_au_programme_chef_de_file": "Culture",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": "113 - Paysages, eau et biodiversité ,",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "INPI - Institut national de la propriété industrielle",
+    "statut": "EPA",
+    "programme_chef_de_file": "134 - Développement des entreprises et du tourisme",
+    "mission_correspondant_au_programme_chef_de_file": "Économie",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  },
+  {
+    "operateur_hors_categorie_ou_categorie_d_operateur_plf_2014": "GIP - Pulvés",
+    "statut": "GIP",
+    "programme_chef_de_file": "154 - Économie et développement durable de l'agriculture et des territoires",
+    "mission_correspondant_au_programme_chef_de_file": "Agriculture, alimentation, forêt et affaires rurales",
+    "autres_programmes_non_chef_de_file_si_operateur_multi_rattache": ".",
+    "nombre_d_operateurs_de_la_categorie_ou_1_si_operateur_unique": 1
+  }
+]

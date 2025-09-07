@@ -23,11 +23,12 @@ coverage/
 .env.local
 .env.*.local
 
-# Generated data
-public/data/*.json
+# Generated data (anonymized samples kept)
+public/data/*_????_????.json
 !public/data/.gitkeep
-!public/data/sample_state_budget_tree_2025.json
-!public/data/sample_state_revenues_2025.json
-!public/data/sample_budget_vert_2025.json
-!public/data/sample_catalog_2025.json
+!public/data/sample_*.json
+
+# Claude Code
+CLAUDE.md
+AGENTS.md
 

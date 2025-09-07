@@ -9,5 +9,5 @@ export default defineConfig({
   plugins: [react()],
   // Keep using repo-level public folder to avoid moving large datasets right now
   publicDir: resolve(__dirname, '../public'),
-  server: { port: 5173, open: true }
+  server: { port: 5173, open: false }
 })

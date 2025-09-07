@@ -1,0 +1,17 @@
+{
+  "year": 2025,
+  "datasets": {
+    "depenses_destination": "plf25-depenses-2025-du-bg-et-des-ba-selon-nomenclatures-destination-et-nature",
+    "depenses_dest_nature": "plf25-depenses-2025-du-bg-et-des-ba-selon-nomenclatures-destination-et-nature",
+    "recettes": "plf2012-jaune-donnees-relations_financieres_ue-recettes-budgetaires",
+    "recettes_detail": "plf25-recettes-des-budgets-annexes",
+    "performance": "performance-execution-et-atteinte-de-la-cible-du-budget-de-l-etat-jusqu-au-niveau-sous-indicateur",
+    "budget_vert": "plf2012-jaune-donnees-relations_financieres_ue-recettes-budgetaires",
+    "ofgl_communes": "ofgl-base-communes",
+    "ofgl_departements": "ofgl-base-departements",
+    "ofgl_regions": "ofgl-base-regions",
+    "bop": "plf25-budget-vert-justification-des-credits-budgetaires-et-des-taxes-affectees",
+    "uo": "plf2014-jaune-personnels-affectes-dans-les-cabinets-ministeriels-en-2011",
+    "operateurs": "plf2014-jaune-operateurs-de-letat-liste-des-operateurs-et-categories"
+  }
+}

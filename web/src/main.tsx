@@ -39,6 +39,16 @@ function App() {
     // Reflect current view as a body class for CSS-based behaviors
     document.body.classList.toggle('view-me', view === 'me')
     document.body.classList.toggle('view-data', view === 'data')
+    if (view === 'me') {
+      // If a pending search was set while switching views, dispatch it now
+      const anyWin: any = window as any
+      const pending = (anyWin.__pendingSearchQuery || '').trim()
+      if (pending) {
+        setTimeout(() => {
+          window.dispatchEvent(new CustomEvent('budget:search', { detail: { query: pending } }))
+        }, 0)
+      }
+    }
   }, [view])
 
   useEffect(() => {

@@ -61,7 +61,10 @@ export function BudgetTotalView({ treeUrl }: Props) {
       if (!tree) return
       const q = (e?.detail?.query ?? '').trim()
       const p = findPathByQuery(tree, q)
-      if (p && p.length) setPath(p)
+      if (p && p.length) {
+        const parentPath = p.length > 1 ? p.slice(0, -1) : p
+        setPath(parentPath)
+      }
     }
     // @ts-ignore
     window.addEventListener('budget:search', onSearch as EventListener)

@@ -35,28 +35,50 @@ export function collapseSingleChild<T extends BudgetNode | null | undefined>(nod
 
 // Find path to first node matching a textual query (code or name contains query)
 function norm(s: string): string {
-  return (s || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '')
+  // Lowercase, strip diacritics, normalize punctuation to spaces, collapse spaces
+  const noAccents = (s || '')
+    .toLowerCase()
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+  return noAccents.replace(/[^a-z0-9]+/g, ' ').trim().replace(/\s+/g, ' ')
+}
+
+const STOP = new Set([
+  'd','de','des','du','le','la','les','l','au','aux','et','a','à','en','pour','sur','dans','par','avec','sans','sous','selon','ou','ou/ou'
+])
+
+function tokens(s: string): string[] {
+  const n = norm(s)
+  if (!n) return []
+  return n.split(' ').filter((t) => t && t.length > 1 && !STOP.has(t))
 }
 
 export function findPathByQuery(root: BudgetNode, query: string): BudgetNode[] | null {
   const q = norm((query || '').trim())
   if (!q) return null
+  
   const path: BudgetNode[] = []
   let found: BudgetNode | null = null
+  
   const dfs = (node: BudgetNode): boolean => {
     path.push(node)
-    const code = norm(node.code || '')
     const name = norm(node.name || '')
-    if (code === q || code.includes(q) || name.includes(q)) {
+    
+    // Simple contains match
+    if (name.includes(q)) {
       found = node
       return true
     }
-    for (const c of node.children || []) if (dfs(c)) return true
+    
+    for (const c of node.children || []) {
+      if (dfs(c)) return true
+    }
     path.pop()
     return false
   }
-  dfs(root)
-  return found ? [...path] : null
+  
+  const result = dfs(root)
+  return result && found ? [...path] : null
 }
 
 export function flattenNodes(root: BudgetNode): Array<{ name: string; code?: string; level: string }> {

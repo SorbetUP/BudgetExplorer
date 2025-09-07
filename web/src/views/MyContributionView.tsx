@@ -50,15 +50,41 @@ export function MyContributionView({ treeUrl, salaryNetMonthly, onSalaryNetChang
     window.dispatchEvent(new CustomEvent('budget:index', { detail: { items } }))
   }, [tree])
 
+  // Process any pending search query set before switching to this view or while data was loading
+  useEffect(() => {
+    if (!tree) return
+    const anyWin: any = window as any
+    const pending = (anyWin.__pendingSearchQuery || '').trim()
+    if (pending) {
+      const p = findPathByQuery(tree, pending)
+      if (p && p.length) {
+        // Zoom on parent so we can see the found element among its siblings
+        const parentPath = p.length > 1 ? p.slice(0, -1) : p
+        setPath(parentPath)
+      }
+      anyWin.__pendingSearchQuery = ''
+    }
+  }, [tree])
+
   useEffect(() => {
     const handler = () => setPath((p) => (p.length > 1 ? p.slice(0, -1) : p))
     // @ts-ignore custom event name
     window.addEventListener('budget:back', handler as EventListener)
     const onSearch = (e: any) => {
-      if (!tree) return
       const q = (e?.detail?.query ?? '').trim()
+      
+      if (!tree) {
+        // Save the search query to be executed once data is loaded
+        ;(window as any).__pendingSearchQuery = q
+        return
+      }
+      
       const p = findPathByQuery(tree, q)
-      if (p && p.length) setPath(p)
+      if (p && p.length) {
+        // Zoom on parent so we can see the found element among its siblings
+        const parentPath = p.length > 1 ? p.slice(0, -1) : p
+        setPath(parentPath)
+      }
     }
     // @ts-ignore
     window.addEventListener('budget:search', onSearch as EventListener)
@@ -68,7 +94,7 @@ export function MyContributionView({ treeUrl, salaryNetMonthly, onSalaryNetChang
       // @ts-ignore
       window.removeEventListener('budget:search', onSearch as EventListener)
     }
-  }, [])
+  }, [tree])
 
   const annotated = tree
   const focusAnnotated = collapseSingleChild((path.length ? path[path.length - 1] : tree) as BudgetNode | null)

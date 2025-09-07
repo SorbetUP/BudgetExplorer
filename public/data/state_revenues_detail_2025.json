@@ -1,0 +1,164 @@
+[
+  {
+    "type_de_recettes": "Recettes BA",
+    "annee": 2025,
+    "mission_budget_annexe": "Contrôle et exploitation aériens",
+    "ligne_de_recettes": "Tarif de solidarité de la taxe sur le transport aérien de passagers",
+    "montant_recettes_plf_2025": 0,
+    "previsions_recettes_2026": 0,
+    "previsions_recettes_2027": 0
+  },
+  {
+    "type_de_recettes": "Recettes BA",
+    "annee": 2025,
+    "mission_budget_annexe": "Contrôle et exploitation aériens",
+    "ligne_de_recettes": "Produit de cession d'actif",
+    "montant_recettes_plf_2025": 2000000,
+    "previsions_recettes_2026": 2000000,
+    "previsions_recettes_2027": 2000000
+  },
+  {
+    "type_de_recettes": "Recettes BA",
+    "annee": 2025,
+    "mission_budget_annexe": "Publications officielles et information administrative",
+    "ligne_de_recettes": "Journal officiel de la République française - Lois et Décrets",
+    "montant_recettes_plf_2025": 0,
+    "previsions_recettes_2026": 0,
+    "previsions_recettes_2027": 0
+  },
+  {
+    "type_de_recettes": "Recettes BA",
+    "annee": 2025,
+    "mission_budget_annexe": "Contrôle et exploitation aériens",
+    "ligne_de_recettes": "Frais d'assiette et recouvrement sur taxes perçues pour le compte de tiers",
+    "montant_recettes_plf_2025": 6376512,
+    "previsions_recettes_2026": 7013134,
+    "previsions_recettes_2027": 7649756
+  },
+  {
+    "type_de_recettes": "Recettes BA",
+    "annee": 2025,
+    "mission_budget_annexe": "Contrôle et exploitation aériens",
+    "ligne_de_recettes": "Contribution Bâle-Mulhouse",
+    "montant_recettes_plf_2025": 9057935,
+    "previsions_recettes_2026": 9712775,
+    "previsions_recettes_2027": 10092799
+  },
+  {
+    "type_de_recettes": "Recettes BA",
+    "annee": 2025,
+    "mission_budget_annexe": "Contrôle et exploitation aériens",
+    "ligne_de_recettes": "Redevances de route",
+    "montant_recettes_plf_2025": 1741033840,
+    "previsions_recettes_2026": 1777743547,
+    "previsions_recettes_2027": 1774579073
+  },
+  {
+    "type_de_recettes": "Recettes BA",
+    "annee": 2025,
+    "mission_budget_annexe": "Contrôle et exploitation aériens",
+    "ligne_de_recettes": "Recettes diverses",
+    "montant_recettes_plf_2025": 3500000,
+    "previsions_recettes_2026": 3500000,
+    "previsions_recettes_2027": 3500000
+  },
+  {
+    "type_de_recettes": "Recettes BA",
+    "annee": 2025,
+    "mission_budget_annexe": "Contrôle et exploitation aériens",
+    "ligne_de_recettes": "Redevances pour services terminaux de la circulation aérienne pour la métropole",
+    "montant_recettes_plf_2025": 273116182,
+    "previsions_recettes_2026": 276532529,
+    "previsions_recettes_2027": 279942301
+  },
+  {
+    "type_de_recettes": "Recettes BA",
+    "annee": 2025,
+    "mission_budget_annexe": "Publications officielles et information administrative",
+    "ligne_de_recettes": "Bulletin des annonces légales et obligatoires",
+    "montant_recettes_plf_2025": 6600000,
+    "previsions_recettes_2026": 6600000,
+    "previsions_recettes_2027": 6600000
+  },
+  {
+    "type_de_recettes": "Recettes BA",
+    "annee": 2025,
+    "mission_budget_annexe": "Publications officielles et information administrative",
+    "ligne_de_recettes": "Vente de publications et abonnements",
+    "montant_recettes_plf_2025": 1000000,
+    "previsions_recettes_2026": 1000000,
+    "previsions_recettes_2027": 1000000
+  },
+  {
+    "type_de_recettes": "Recettes BA",
+    "annee": 2025,
+    "mission_budget_annexe": "Publications officielles et information administrative",
+    "ligne_de_recettes": "Bulletin officiel des annonces des marchés publics",
+    "montant_recettes_plf_2025": 71100000,
+    "previsions_recettes_2026": 66300000,
+    "previsions_recettes_2027": 66300000
+  },
+  {
+    "type_de_recettes": "Recettes BA",
+    "annee": 2025,
+    "mission_budget_annexe": "Contrôle et exploitation aériens",
+    "ligne_de_recettes": "Redevances de surveillance et de certification",
+    "montant_recettes_plf_2025": 28850000,
+    "previsions_recettes_2026": 30000000,
+    "previsions_recettes_2027": 30500000
+  },
+  {
+    "type_de_recettes": "Recettes BA",
+    "annee": 2025,
+    "mission_budget_annexe": "Publications officielles et information administrative",
+    "ligne_de_recettes": "Produit de cession d'actif",
+    "montant_recettes_plf_2025": 0,
+    "previsions_recettes_2026": 0,
+    "previsions_recettes_2027": 0
+  },
+  {
+    "type_de_recettes": "Recettes BA",
+    "annee": 2025,
+    "mission_budget_annexe": "Publications officielles et information administrative",
+    "ligne_de_recettes": "Bulletin officiel des annonces civiles et commerciales",
+    "montant_recettes_plf_2025": 100000000,
+    "previsions_recettes_2026": 100000000,
+    "previsions_recettes_2027": 100000000
+  },
+  {
+    "type_de_recettes": "Recettes BA",
+    "annee": 2025,
+    "mission_budget_annexe": "Contrôle et exploitation aériens",
+    "ligne_de_recettes": "Tarif de l'aviation civile (part de la taxe sur le transport aérien de marchandises et de la taxe sur le transport aérien de passagers)",
+    "montant_recettes_plf_2025": 545790968,
+    "previsions_recettes_2026": 571297297,
+    "previsions_recettes_2027": 594872372
+  },
+  {
+    "type_de_recettes": "Recettes BA",
+    "annee": 2025,
+    "mission_budget_annexe": "Contrôle et exploitation aériens",
+    "ligne_de_recettes": "Redevance océanique et redevances pour services terminaux de la circulation aérienne en outre-mer",
+    "montant_recettes_plf_2025": 46700000,
+    "previsions_recettes_2026": 47700000,
+    "previsions_recettes_2027": 48600000
+  },
+  {
+    "type_de_recettes": "Recettes BA",
+    "annee": 2025,
+    "mission_budget_annexe": "Publications officielles et information administrative",
+    "ligne_de_recettes": "Prestations et travaux d'édition",
+    "montant_recettes_plf_2025": 1800000,
+    "previsions_recettes_2026": 1800000,
+    "previsions_recettes_2027": 1800000
+  },
+  {
+    "type_de_recettes": "Recettes BA",
+    "annee": 2025,
+    "mission_budget_annexe": "Publications officielles et information administrative",
+    "ligne_de_recettes": "Autres activités",
+    "montant_recettes_plf_2025": 500000,
+    "previsions_recettes_2026": 500000,
+    "previsions_recettes_2027": 500000
+  }
+]

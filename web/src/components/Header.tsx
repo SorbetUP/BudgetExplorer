@@ -81,9 +81,25 @@ export function Header({ view, onViewChange, year, onYearChange, salaryNet, onSa
             if (e.key === 'ArrowDown') { e.preventDefault(); setActive((i) => Math.min((suggestions.length || 1) - 1, i + 1)) }
             else if (e.key === 'ArrowUp') { e.preventDefault(); setActive((i) => Math.max(0, i - 1)) }
             else if (e.key === 'Enter') {
+              // Try suggestion first, fallback to raw query
               const pick = suggestions[active]
-              const query = pick?.code || pick?.name || q.trim()
-              if (query) window.dispatchEvent(new CustomEvent('budget:search', { detail: { query } }))
+              let query = pick?.name || pick?.code || q.trim()
+              
+              // If no suggestion selected and we have suggestions, use the first one
+              if (!pick && suggestions.length > 0) {
+                query = suggestions[0].name || suggestions[0].code || q.trim()
+              }
+              
+              if (query) {
+                setQ(query)
+                if (boxRef.current) boxRef.current.value = query
+                ;(window as any).__pendingSearchQuery = query
+                if (view === 'me') {
+                  window.dispatchEvent(new CustomEvent('budget:search', { detail: { query } }))
+                } else {
+                  onViewChange('me' as any)
+                }
+              }
               setOpen(false)
               ;(e.currentTarget as HTMLInputElement).blur()
             }
@@ -98,8 +114,15 @@ export function Header({ view, onViewChange, year, onYearChange, salaryNet, onSa
                 className={`item ${i === active ? 'active' : ''}`}
                 onMouseDown={(e) => { e.preventDefault(); }}
                 onClick={() => {
-                  const query = s.code || s.name
-                  window.dispatchEvent(new CustomEvent('budget:search', { detail: { query } }))
+                  const query = s.name || s.code || ''
+                  setQ(query)
+                  if (boxRef.current) boxRef.current.value = query
+                  ;(window as any).__pendingSearchQuery = query
+                  if (view === 'me') {
+                    window.dispatchEvent(new CustomEvent('budget:search', { detail: { query } }))
+                  } else {
+                    onViewChange('me' as any)
+                  }
                   setOpen(false)
                   boxRef.current?.blur()
                 }}
