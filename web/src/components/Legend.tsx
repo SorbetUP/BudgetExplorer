@@ -36,11 +36,7 @@ export function Legend({ min, max, contribution, editable = false, onContributio
         </div>
       )}
       <div className="legend-bar" />
-      <div className="legend-ticks">
-        {ticks.map((v, i) => (
-          <span key={i}>{formatMd(v)}</span>
-        ))}
-      </div>
+      {/* Tick labels intentionally removed for a cleaner look */}
     </div>
   )
 }
